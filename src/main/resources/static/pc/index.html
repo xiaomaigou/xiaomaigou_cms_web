@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="zh-CN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/reset.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/footer.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/pager.css?v=202001232029">
+    <!--<link rel="stylesheet" type="text/css" href="./cmsstatic/lib/swiper-5.0.3/package/css/swiper.min.css?v=202001232029">-->
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/swiper.min.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/dtk.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/new_home.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/share.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/web/css/cms_ggw.css?v=202001232029">
+    <link href="./cmsstatic/web/css/cms_skin/pink.css?v=202001232029" rel="stylesheet">
+    <link rel="stylesheet" href="./cmsstatic/css/iconfont.css?v=202001232029">
+    <title>小麦购商城(XiaoMaiGou.COM)-正品低价、品质保障、配送及时、轻松购物!</title>
+    <meta name="keywords"
+          content="小麦购,小麦购商城,xiaomaigou,优惠内部券,京东优惠券,淘宝优惠券,天猫优惠券,特价商品,9块9包邮,导购分享,网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,小麦购商城"/>
+    <meta name="description"
+          content="小麦购商城(XiaoMaiGou.COM)-专业的综合网上导购商城，包括京东、天猫、淘宝等优惠券商品精选，为您提供正品低价的特价商品、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"/>
+    <script src="./cmsstatic/other/jquery/1.12.4/jquery.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/lib/axios-0.19.0/dist/axios.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/layer/layer.js?v=202001232029"></script>
+    <!--<script src="./cmsstatic/lib/swiper-5.0.3/package/js/swiper.min.js?v=202001232029"></script>-->
+    <script src="./cmsstatic/js/swiper.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/clipboard.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/ZeroClipboard.js?v=202001232029"></script>
+    <script src="./cmsstatic/other/jquery-cookie/1.4.1/jquery.cookie.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/web/js/lazyload.js?v=202001232029"></script>
+    <!-- xiaomaigou自定义 -->
+    <script src="./cmsstatic/js/base.js?v=202001232029"></script>
+    <!-- dtk自定义 -->
+    <script src="./cmsstatic/js/dtk.js?v=202001232029"></script>
+
+</head>
+
+<body data-appid="1263486" data-in="1">
+<!--顶部推荐位s-->
+<div id="content">
+    <div id="testTop"></div>
+</div>
+<!--顶部推荐位e-->
+
+<div class="new_home">
+    <div id="headNav">
+        <div id="header">
+            <a class="header_logo" href="index.html?source=index"
+               style=" background: url('')left top no-repeat;">
+                小麦购商城 </a>
+
+            <div id="showList">
+                <div id="search">
+                    <input type="hidden" name="search_kw" id="search_kw" value="打底裤">
+                    <form action="search.html" method="get">
+                        <input type="hidden" name="source" value="index">
+                        <input type="hidden" id="search_introduce" name="introduce" value="1">
+                        <input type="text" autocomplete="off" class="theme-border-color-1 my-src-input" value=""
+                               name="kw" placeholder="打底裤"/>
+                        <span class="src-close-btn"></span>
+                        <button class="theme-bg-color-1 my-src-btn">搜 索</button>
+                    </form>
+                    <!-- 热搜记录 -->
+                    <div class="rec_word" id="rec_word"></div>
+                    <!-- 搜索联想词 -->
+                    <ul class="search-land">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <p>关闭</p>
+                    </ul>
+                </div>
+            </div>
+            <img class="head_group fr" src="./cmsstatic/images/home/headgrup.png?v=202001232029"
+                 alt="">
+        </div>
+
+        <!--悬浮搜索框s-->
+        <div class="floatNav">
+            <div class="w_1200">
+                <ul class="fn-left">
+                    <li class="active">
+                        <a href="index.html?source=index">首页</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=居家日用&hot=0"> 居家日用</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=美食&hot=1"> 美食</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=母婴&hot=2"> 母婴</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=美妆&hot=3"> 美妆</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=女装&hot=4"> 女装</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=数码家电&hot=5"> 数码家电</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=文娱车品&hot=6"> 文娱车品</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=内衣&hot=7"> 内衣</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=家装家纺&hot=8"> 家装家纺</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=鞋品&hot=9"> 鞋品</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=男装&hot=10"> 男装</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=配饰&hot=11"> 配饰</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=户外运动&hot=12"> 户外运动</a>
+                    </li>
+                    <li class="">
+
+                        <a href="search.html?source=index&materialId=3758&kw=箱包&hot=13"> 箱包</a>
+                    </li>
+                </ul>
+                <div class="fn-block">
+                    <form action="search.html" method="get">
+                        <input type="hidden" name="source" value="index">
+                        <input type="hidden" id="fn_search_introduce" name="introduce" value="1">
+                        <input type="text" autocomplete="off" class="fn-src my-src-input" value="" name="kw"
+                               placeholder="打底裤"/>
+                        <span class="src-close-btn" style="right:55px;top: 3px;"></span>
+                        <button class="srcBtn"></button>
+                    </form>
+                    <ul class="search-land" style="top:32px">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <p>关闭</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--悬浮搜索框e-->
+    </div>
+
+    <div id="baner" class="theme-bg-color-1">
+        <div id="nav">
+            <a data-dtk-satc="{desc:'首页',name:'CmsPcPartEvent'}" href="index.html?source=index"
+               class="theme-hover-bg-color-8 iconM active">
+                首页
+            </a>
+            <a data-dtk-satc="{desc:'好货精选',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/index----l/index"
+               target="_blank" href="hhjx.html?source=index">
+                好货精选
+            </a>
+            <a data-dtk-satc="{desc:'疯抢榜',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/index----p/index"
+               target="_blank" href="fqb.html?source=index">
+                疯抢榜
+            </a>
+            <a data-dtk-satc="{desc:'9块9包邮',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/index----nine/index"
+               target="_blank" href="nine.html?source=index">
+                9块9包邮
+            </a>
+            <a data-dtk-satc="{desc:'咚咚抢',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/index----ddq/index"
+               target="_blank" href="ddq.html?source=index">
+                咚咚抢
+            </a>
+        </div>
+    </div>
+
+    <div id="dtk_mian" style="background: url('./cmsstatic/images/bg.png') top center repeat-y;">
+        <div class="year-bg">
+            <div class="home-page">
+                <div class="hp-head banner_con">
+                    <ul class="hph_1">
+                        <li class="attr_list">
+                            <!-- 循环开始 -->
+                            <dl>
+                                <dt class="tit"><img class="ico"
+                                                     src="https://img.alicdn.com/imgextra/i2/2053469401/O1CN01VG4gop2JJhu9yo5dR-2053469401.png">服饰鞋包
+                                </dt>
+                                <dd>
+                                    <a data-dtk-satc="{desc:'女装',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=女装"
+                                       target="_blank" style="color:#FE2E54">女装</a>
+                                    <a data-dtk-satc="{desc:'男装',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=男装"
+                                       target="_blank" style="">男装</a>
+                                    <a data-dtk-satc="{desc:'内衣',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=内衣"
+                                       target="_blank" style="color:#FE2E54">内衣</a>
+                                    <a data-dtk-satc="{desc:'连衣裙',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=连衣裙"
+                                       target="_blank" style="color:#FE2E54">连衣裙</a>
+                                    <a data-dtk-satc="{desc:'配饰',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=配饰"
+                                       target="_blank" style="">配饰</a>
+                                    <a data-dtk-satc="{desc:'鞋品',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=鞋品"
+                                       target="_blank" style="">鞋品</a>
+                                    <a data-dtk-satc="{desc:'箱包',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=箱包"
+                                       target="_blank" style="">箱包</a>
+                                    <a data-dtk-satc="{desc:'卫衣',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=卫衣"
+                                       target="_blank" style="color:#FE2E54">卫衣</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="tit">
+                                    <img class="ico"
+                                         src="https://img.alicdn.com/imgextra/i2/2053469401/O1CN01HDhZXR2JJhuAOUVjh-2053469401.png">美食
+                                </dt>
+                                <dd>
+                                    <a data-dtk-satc="{desc:'休闲零食',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=休闲零食"
+                                       target="_blank" style="">休闲零食</a>
+                                    <a data-dtk-satc="{desc:'元气早餐',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=元气早餐"
+                                       target="_blank" style="color:#FE2E54">元气早餐</a>
+                                    <a data-dtk-satc="{desc:'坚果',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=坚果"
+                                       target="_blank" style="color:#FE2E54">坚果</a>
+                                    <a data-dtk-satc="{desc:'糖果巧克力',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=糖果巧克力"
+                                       target="_blank" style="">糖果巧克力</a>
+                                    <a data-dtk-satc="{desc:'方便速食',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=方便速食"
+                                       target="_blank" style="color:#FE2E54">方便速食</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="tit">
+                                    <img class="ico"
+                                         src="https://img.alicdn.com/imgextra/i3/2053469401/O1CN01xbEVSm2JJhuBVC5Pb-2053469401.png">美妆
+                                </dt>
+                                <dd>
+                                    <a data-dtk-satc="{desc:'唇妆',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=唇妆"
+                                       target="_blank" style="color:#FE2E54">唇妆</a>
+                                    <a data-dtk-satc="{desc:'面膜',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=面膜"
+                                       target="_blank" style="color:#FE2E54">面膜</a>
+                                    <a data-dtk-satc="{desc:'底妆',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=底妆"
+                                       target="_blank" style="">底妆</a>
+                                    <a data-dtk-satc="{desc:'基础护肤',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=基础护肤"
+                                       target="_blank" style="">基础护肤</a>
+                                    <a data-dtk-satc="{desc:'四季防晒',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=四季防晒"
+                                       target="_blank" style="color:#FE2E54">四季防晒</a>
+                                    <a data-dtk-satc="{desc:'眼妆',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=眼妆"
+                                       target="_blank" style="">眼妆</a>
+                                    <a data-dtk-satc="{desc:'洗面奶',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=洗面奶"
+                                       target="_blank" style="">洗面奶</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="tit">
+                                    <img class="ico"
+                                         src="https://img.alicdn.com/imgextra/i3/2053469401/O1CN01kv7JlR2JJhu3ZtUVN-2053469401.png">居家生活
+                                </dt>
+                                <dd>
+                                    <a data-dtk-satc="{desc:'母婴',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=母婴"
+                                       target="_blank" style="color:#FE2E54">母婴</a>
+                                    <a data-dtk-satc="{desc:'日用品',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=日用品"
+                                       target="_blank" style="">日用品</a>
+                                    <a data-dtk-satc="{desc:'厨房用品',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=厨房用品"
+                                       target="_blank" style="">厨房用品</a>
+                                    <a data-dtk-satc="{desc:'纸巾',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=纸巾"
+                                       target="_blank" style="color:#FE2E54">纸巾</a>
+                                    <a data-dtk-satc="{desc:'家装家纺',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=家装家纺"
+                                       target="_blank" style="">家装家纺</a>
+                                    <a data-dtk-satc="{desc:'户外运动',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=户外运动"
+                                       target="_blank" style="">户外运动</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="tit">
+                                    <img class="ico"
+                                         src="https://img.alicdn.com/imgextra/i4/2053469401/O1CN01nM4UX22JJhuB6Qun3-2053469401.png">数码办公
+                                </dt>
+                                <dd>
+                                    <a data-dtk-satc="{desc:'数码家电',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=数码家电"
+                                       target="_blank" style="color:#FE2E54">数码家电</a>
+                                    <a data-dtk-satc="{desc:'文娱车品',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=文娱车品"
+                                       target="_blank" style="">文娱车品</a>
+                                    <a data-dtk-satc="{desc:'耳机',name:'CmsPcFirstCidEvent'}"
+                                       href="search.html?source=index&materialId=3758&kw=耳机"
+                                       target="_blank" style="">耳机</a>
+                                </dd>
+                            </dl>
+                            <!--                循环结束-->
+                        </li>
+                    </ul>
+                    <div class="hph_2">
+                        <!-- 中间banner -->
+                        <div class="swiper-container banner-center" id="cms_pc_swiper">
+                            <div class="swiper-wrapper">
+                                <!--                    banner未配置。招商也未配置时，显示默认图片-->
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows custom -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <!-- 中下三banner -->
+                        <div class="cb" id="cms_pc_swiper_down">
+                        </div>
+                    </div>
+                    <!-- 首页右部广告 -->
+                    <div class="hph_3">
+                        <!-- 首页右上部广告 -->
+                        <div class="swiper-container com_banner rt" banner-id="rt" id="cms_pc_swiper_right_up">
+                        </div>
+                        <!-- 首页右中部广告 -->
+                        <div class="rc">
+                            <p class="tit"><i></i>
+                                <span class="tit_font" style="">优惠头条                                    </span>
+                                <span class="tit_dec" style=""></span>
+                            </p>
+                            <!--                <div class="swiper-container notice">-->
+                            <!--                    <div class="swiper-wrapper">-->
+                            <ul class="swiper-slide yh_ul" id="cms_pc_sale_model">
+                            </ul>
+                            <!--                    </div>-->
+                            <!--                </div>-->
+
+                        </div>
+                        <!-- 首页右下部广告 -->
+                        <div class="swiper-container com_banner rb" banner-id="rb" id="cms_pc_swiper_right_dowm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 小编说 -->
+                <div class="hp-topic">
+                    <span class="lb">小编说<img src="./cmsstatic/images/home/lb.png?v=202001232029" alt="小编说"></span>
+                    亲爱的，欢迎每天来选购超值优惠商品哦~每天都会准时更新
+                </div>
+
+                <!-- 中部开始 -->
+                <div class="hp_content">
+                    <!-- 中部左侧开始 -->
+                    <div class="hpc_l fl">
+                        <!-- 咚咚抢开始 -->
+                        <div class="cent ddq">
+                            <div class="tit">
+                                <p class="fl"><i></i>
+                                    <span style="">咚咚抢</span>
+                                    <span style=""></span>
+                                </p>
+
+                                <span class="fl time" data-next1_date="2019-10-08" data-next1_hour="00"
+                                      data-next2_date="2019-10-08" data-next2_hour="08">距本场结束 <i class="cc_hour">00</i>:<i
+                                        class="cc_min">00</i>:<i class="cc_sec">00</i></span>
+
+                                <a href="ddq.html?source=index" data-dtk-satc="{desc:'查看更多',name:'CmsPcGrabEvent'}"
+                                   target="_blank" class="fr more">查看更多</a>
+                                <span class="fr change" id="home_ddq_change"
+                                      data-dtk-satc="{desc:'换一换',name:'CmsPcGrabEvent'}" cur-num="0">换一换</span>
+                            </div>
+                            <!-- 咚咚抢商品列表 -->
+                            <div class="list_block" id="home_ddq_list">
+                                <!--           循环开始-->
+                                <!--           循环结束-->
+                            </div>
+                            <!-- 咚咚抢结束 -->
+                        </div>
+
+                        <!-- 疯抢榜开始 -->
+                        <div class="cent fq">
+                            <div class="tit">
+                                <p class="fl"><i></i>
+                                    <span style="">疯抢榜</span>
+                                    <span class="dec" style=""></span>
+                                </p>
+                                <div class="list-tab fl">
+                                    <span class="act">实时</span>
+                                    <span>全天</span>
+                                </div>
+                                <div class="fr more" data-dtk-satc="{desc:'查看更多',name:'CmsPcCrazyEvent'}"
+                                     data-href="fqb.html?source=index" target="_blank">查看更多
+                                </div>
+                            </div>
+
+                            <!-- 实时 上部 -->
+                            <div class="list_top" id="home_fqb_list_top_realTime">
+                                <!--           循环开始-->
+                                <!--           循环结束-->
+                            </div>
+                            <!-- 全天 上部 -->
+                            <div class="list_top" style="display: none;" id="home_fqb_list_top_allDay">
+                                <!--           循环开始-->
+                                <!--           循环结束-->
+                            </div>
+                            <!-- 实时 下部 -->
+                            <div class="list_bt" id="home_fqb_list_bt_realTime">
+                                <!--           循环开始-->
+                                <!--           循环结束-->
+                            </div>
+
+                            <!-- 全天 下部 -->
+                            <div class="list_bt" style="display: none;" id="home_fqb_list_bt_allDay">
+                                <!--           循环开始-->
+                                <!--           循环结束-->
+                            </div>
+                            <!-- 疯抢榜结束 -->
+                        </div>
+
+                        <!-- 中部左侧结束-->
+                    </div>
+
+                    <!-- 中部右侧(今日大牌)开始 -->
+                    <div class="hpc_r fr" id="home_today_brand">
+                        <!--           循环开始-->
+                        <!--           循环结束-->
+                        <!-- 中部右侧(今日大牌)结束 -->
+                    </div>
+                    <!-- 中部结束 -->
+                </div>
+
+                <div class="hp_qlist">
+                    <div class="tit"><p class="fl"><i></i>
+
+                        <span style="">好货精选</span>
+                        <span class="dec" style="">实时更新 独享优惠券</span>
+                    </p>
+                        <span class="fr reduce">今日已为用户省钱<b>257,283,592</b> 元</span></div>
+
+                    <!-- 好货精选商品列表 -->
+                    <div class="list_cent" id="homeGoodsItem">
+                        <!-- 循环开始 -->
+                        <!-- 循环结束 -->
+                    </div>
+
+                    <div class="mainbody_6" style="margin: 0 auto;margin-bottom: 0px;margin-top: 26px;">
+                        <div id="yw0" class="pager">
+                            <a class="next-page" id="getNextPage" href="javascript:void(0);">查看更多...</a>
+                            <!--<a class="pre-page disabled" href="javascript:void(0);">上一页</a>-->
+                            <!--<a class="item cur" href="javascript:void(0);">1</a>-->
+                            <!--<a class="item" href="/index.php?r=l&amp;page=2">2</a>-->
+                            <!--<a class="item" href="/index.php?r=l&amp;page=3">3</a>-->
+                            <!--<a class="item" href="/index.php?r=l&amp;page=4">4</a>-->
+                            <!--<a class="item" href="/index.php?r=l&amp;page=5">5</a>-->
+                            <!--<a class="item" href="/index.php?r=l&amp;page=6">6</a>-->
+                            <!--<a class="item more" href="javascript:void(0);">...</a>-->
+                            <!--<a class="item" href="/index.php?r=l&amp;page=807">807</a>-->
+                            <!--<a class="next-page" href="/index.php?r=l&amp;page=2">下一页</a>-->
+                            <!--<a class="next-page" id="getNextPage" href="javascript:void(0);">下一页</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--活动弹窗-->
+            <!--活动弹窗-->
+        </div>
+    </div>
+
+    <script>
+        // 工具栏加入收藏
+        function addFavorite() {
+            var url = window.location;
+            var title = document.title;
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.indexOf("msie 8") > -1) {
+                external.AddToFavoritesBar(url, title, '');//IE8
+            } else {
+                try {
+                    window.external.addFavorite(url, title);
+                } catch (e) {
+                    try {
+                        window.sidebar.addPanel(title, url, "");//firefox
+                    } catch (e) {
+                        layer.msg("加入收藏失败，请使用Ctrl+D进行添加");
+                    }
+                }
+            }
+        }
+    </script>
+
+    <ul class="float-tool">
+        <li onclick="shoucang('我的网站',location.href)"><img
+                src="./cmsstatic/images/home/sc.png?v=202001232029" alt="">
+            <p>收藏</p></li>
+        <li class="ft-share"><img src="./cmsstatic/images/home/share.png?v=202001232029" alt="">
+            <p>分享</p>
+            <div class="share-platform">
+                <div class="share-platform-r">
+                    <div class="bshare-custom bdsharebuttonbox bdshare-button-style1-32">
+                        <a title="分享到微信" class="bshare-weixin bds_weixin"></a>
+                        <a title="分享到新浪微博" class="bshare-sinaminiblog bds_tsina"></a>
+                        <a title="分享到QQ好友" class="bshare-qqim bds_sqq"></a>
+                        <a title="分享到QQ空间" class="bshare-qzone bds_qzone"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--<script type="text/javascript" charset="utf-8"-->
+            <!--src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script>-->
+            <!--<script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script>-->
+
+        </li>
+        <li>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=923782299&site=qq&menu=yes">
+                <img src="./cmsstatic/images/home/kf.png?v=202001232029" alt="">
+            </a>
+            <p>客服</p></li>
+        <li><a href="feedbackpc.html?source=index" target="_blank">
+            <img src="./cmsstatic/images/home/feedback.png?v=202001232029" alt="">
+            <p>反馈</p></a></li>
+        <li class="to_top" onclick=" $('body,html').animate({scrollTop:0},1000);">
+            <img style="padding-top: 12px;" src="./cmsstatic/images/home/top.png?v=202001232029" alt=""></li>
+    </ul>
+
+    <script>
+        var standId = 1263486;
+        var MtaH5 = {
+            clickShare: function () {
+            },
+            clickStat: function () {
+            },
+            hack: function () {
+            },
+            pgv: function () {
+            }
+        };
+        var getCookie = function (name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        };
+        var _mtac = {"performanceMonitor": 1, "senseQuery": 1};
+        // (function () {
+        //     var mta = document.createElement("script");
+        //     mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+        //     mta.setAttribute("name", "MTAH5");
+        //     /*mta.setAttribute("sid", "500628441");
+        //     mta.setAttribute("cid", "500628444");*/
+        //     mta.setAttribute("sid", "500626642");
+        //     mta.setAttribute("cid", "500626643");
+        //
+        //     var s = document.getElementsByTagName("script")[0];
+        //     s.parentNode.insertBefore(mta, s);
+        // })();
+        // DTK统计代码
+        // (function () {
+        //     var script = document.createElement("script");
+        //     var time = new Date(), FullYear = time.getFullYear(), Month = time.getMonth(), getDate = time.getDate();
+        //     script.src = "./cmsstatic/satc/dest/js/dtksatc.js?v=202001232029";
+        //     script.setAttribute("name", "DTKSATC");
+        //     script.setAttribute("tid", "dtk-cms-1263486"); // 站点id
+        //     script.setAttribute("uid", getCookie("user_id")); // 登录用户id
+        //     var s = document.getElementsByTagName("script")[0];
+        //     s.parentNode.insertBefore(script, s);
+        // })();
+    </script>
+
+    <div id="footer" class="com-footer" style="height: auto">
+        <div class="footer-wrapper" style="padding: 45px 0 10px;">
+            <ul>
+                <li>网站导航</li>
+                <li><a href="index.html?source=index">首页</a></li>
+                <li><a href="hhjx.html?source=index">好货精选</a></li>
+                <li><a href="fqb.html?source=index">疯抢榜</a></li>
+                <li><a href="ddq.html?source=index">咚咚抢</a></li>
+                <li><a href="nine.html?source=index">9.9包邮</a></li>
+            </ul>
+            <p>小麦购商城是一家中立的导购网站，网站中的商品信息均来自于互联网。如商品信息不同，可能是商品信息未及时更新，所有商品信息请以天猫/淘宝店铺内为准。</p>
+
+            <div class="text">
+                <span>版权所有 本站内容未经书面许可,禁止一切形式的转载</span>
+                <span class="ml">
+                    <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");-->
+                    <!--document.write(unescape("%3Cspan id='cnzz_stat_icon_1277710951'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277710951%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>-->
+                    &copy; CopyRight&nbsp;2020</span>
+                <a class="ml" href="//www.xiaomaigou.com" target="_blank" rel="nofollow">
+                    小麦购商城XiaoMaiGou.COM </a>
+                <a class="miitbeian ml" href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow">
+                </a>
+                <a href="feedbackpc.html?source=index" target="_blank"
+                   style="margin-left: 20px;text-decoration: underline;">我要反馈</a>
+                <p class="ml" style="text-algin:center;margin: 15px auto;"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./cmsstatic/js/scrollTop2.js?v=202001232029"></script>
+<!-- xiaomaigou自定义 -->
+<script src="./cmsstatic/js/service/headService.js?v=202001232029"></script>
+<script src="./cmsstatic/js/show/headShow.js?v=202001232029"></script>
+<script src="./cmsstatic/js/controller/headController.js?v=202001232029"></script>
+<script src="./cmsstatic/js/service/homeService.js?v=202001232029"></script>
+<script src="./cmsstatic/js/show/homeShow.js?v=202001232029"></script>
+<script src="./cmsstatic/js/controller/homeController.js?v=202001232029"></script>
+<!-- 顶部广告位 -->
+<script src="./cmsstatic/web/js/cms_ggw.js?v=202001232029"></script>
+<!-- 网站pc wap通用红包 新版  -->
+<script src="./cmsstatic/lib/redPacket/activityRedPacket.js?v=202001232029"></script>
+<script src="./cmsstatic/wap_new/lib/md5.js?v=202001232029"></script>
+</body>
+</html>

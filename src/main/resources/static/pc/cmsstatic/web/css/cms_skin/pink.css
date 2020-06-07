@@ -1,0 +1,146 @@
+/**
+ * static.cms - v1.0.0  License By 
+ * WEB小组  
+ */
+.theme-after-border-top-color-1:after, .theme-before-border-top-color-1:before, .theme-border-top-color-1 {
+    border-top-color: #FE2E54 !important
+}
+
+.cat-lit-video.theme-hover-color-1 .theme-span, .goods-pages-page .page-num b, .order-nav ul li.cur a, .theme-color-1, .theme-color-3, .theme-hover-color-1 .theme-a:focus, .theme-hover-color-1 .theme-a:focus .theme-b, .theme-hover-color-1.active .theme-a, .theme-hover-color-1.active .theme-b, .theme-hover-color-1:hover, .theme-hover-color-1:hover .theme-a, .theme-hover-color-1:hover .theme-b {
+    color: #FE2E54 !important
+}
+
+.pager .item.cur, .pager .item:hover, .theme-bg-color-1, body .pager .next-page:hover, body .pager .pre-page:hover {
+    background: #FE2E54 !important
+}
+
+.wap-srcBtn {
+    background: #FC4D35 !important
+}
+
+.theme-bg-color-3, .theme-bg-color-4, .theme-bg-color-5, .theme-bg-color-6, .theme-hover-bg-color-3:hover, .theme-hover-bg-color-6.active, .theme-hover-bg-color-6:hover {
+    background-color: #FE2E54 !important
+}
+
+body #headNav #header #showList #search input {
+    border-color: #FE2E54 !important
+}
+
+.order-nav ul li.cur {
+    border-bottom: 1px solid #FE2E54 !important
+}
+
+.cat-lit-video.theme-hover-color-1 .theme-span, .theme-border-color-1, .theme-hover-border-color-1.active, .theme-hover-border-color-1:hover, .theme-hover-color-1 .theme-a:focus .theme-i, .theme-hover-color-1.active .theme-i, .theme-hover-color-1:hover .theme-i {
+    border-color: #FE2E54 !important
+}
+
+.cat-lit-video.theme-hover-color-1 .theme-span:before, .theme-border-left-color-1 {
+    border-left-color: #EB3031 !important
+}
+
+.theme-border-color-3, .theme-border-color-4, .theme-border-color-5, .theme-border-color-6, .theme-hover-border-color-3.active, .theme-hover-border-color-3:hover, .theme-hover-border-color-4.active, .theme-hover-border-color-4:hover, .theme-hover-border-color-5.active, .theme-hover-border-color-5:hover {
+    border-color: #FE2E54 !important
+}
+
+.theme-border-bottom-color-1 {
+    border-bottom-color: #FE2E54 !important
+}
+
+.theme-a-hover-active-border-top-1 a.active, .theme-a-hover-active-border-top-1 a:focus, .theme-a-hover-active-border-top-1 a:hover {
+    color: #FE2E54 !important;
+    border-top-color: #FE2E54 !important
+}
+
+.theme-color-4 {
+    color: #FE4A65 !important
+}
+
+.theme-color-5, .theme-color-6 {
+    color: #FE2E54 !important
+}
+
+.theme-bg-color-7, .theme-hover-bg-color-7.active, .theme-hover-bg-color-7:hover {
+    background-color: #fff7f0 !important
+}
+
+.theme-color-7 {
+    color: #fff7f0 !important
+}
+
+.theme-bg-color-8, .theme-hover-bg-color-8.active, .theme-hover-bg-color-8:focus, .theme-hover-bg-color-8:hover {
+    background-color: #E41E43 !important
+}
+
+.theme-color-8 {
+    color: #FE2E54 !important
+}
+
+.theme-color-9 {
+    color: #fff7fa !important
+}
+
+.theme-bg-color-9, .theme-hover-bg-color-9.active, .theme-hover-bg-color-9:hover {
+    background-color: #EB3031 !important;
+    color: #fff !important
+}
+
+html .you-wrapper .text {
+    border-radius: 11px
+}
+
+#header .header_logo {
+    color: #FE2E54 !important
+}
+
+body #headNav #header #showList #search button:hover {
+    background: #E41E43 !important
+}
+
+body #headNav #header #showList dl .rg {
+    background-image: url(../../images/redbg.png?v=202001232029);
+    background-position: 0 1px
+}
+
+body #headNav #header #showList dl .zy {
+    background-image: url(../../images/redbg.png?v=202001232029);
+    background-position: 0 -77px
+}
+
+body #headNav #header #showList dl .qc {
+    background-image: url(../../images/redbg.png?v=202001232029);
+    background-position: 0 -151px
+}
+
+.void_border {
+    border: 1px solid #FE2E54 !important;
+    border-radius: 2px;
+    padding: 5px
+}
+
+.floatNav .srcBtn {
+    background-color: #FE2E54 !important
+}
+
+.floatNav .fn-block {
+    border: 2px solid #FE2E54 !important
+}
+
+html #content .discount .dis_product .pro_detail:hover, html .goods-list ul li:hover {
+    border-color: #FE2E54 !important;
+    position: relative;
+    z-index: 5;
+    zoom: 1;
+    overflow: initial
+}
+
+html .index-wrapper .icon-link-wrapper {
+    margin: 0;
+    padding: 5px 0
+}
+
+html .index-wrapper .icon-link-wrapper .icon-url-list {
+    margin: 0 5px;
+    padding-top: 8px;
+    position: relative;
+    z-index: 1
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>对勾选中</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分享图片" transform="translate(-919.000000, -756.000000)">
+            <g id="分组-9" transform="translate(919.000000, 756.000000)">
+                <g id="对勾选中">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="30" height="30"></rect>
+                    <path d="M30,0 L30,30 L0,30 L30,0 Z M17.9620598,26.1914518 L26.5712148,17.5820682 C26.8291794,17.2925812 26.8165089,16.8521163 26.5423296,16.577937 C26.2681504,16.3037578 25.8276855,16.2910873 25.5381985,16.5490519 L17.4455517,24.6416987 L14.1741048,21.3702519 C13.8847398,21.1113213 13.4435035,21.1235333 13.1689033,21.3980728 C12.8943031,21.6726122 12.8819934,22.1138458 13.1408599,22.4032681 L16.9290436,26.1914518 C17.2145788,26.476045 17.6765246,26.476045 17.9620598,26.1914518 Z" id="合并形状" fill="#FF2E54"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

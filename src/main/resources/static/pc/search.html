@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="zh-CN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/reset.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/footer.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/pager.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/swiper.min.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/dtk.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/new_home.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/share.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/web/css/cms_ggw.css?v=202001232029">
+    <link rel="stylesheet" href="./cmsstatic/web/css/cms_skin/pink.css?v=202001232029">
+    <link rel="stylesheet" href="./cmsstatic/css/iconfont.css?v=202001232029">
+    <link rel="stylesheet" type="text/css" href="./cmsstatic/css/coupon.css?v=202001232029"/>
+    <title>商品搜索-小麦购商城</title>
+    <meta name="keywords"
+          content="小麦购,小麦购商城,xiaomaigou,优惠内部券,京东优惠券,淘宝优惠券,天猫优惠券,特价商品,9块9包邮,导购分享,网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜,小麦购商城"/>
+    <meta name="description"
+          content="小麦购商城(XiaoMaiGou.COM)-专业的综合网上导购商城，包括京东、天猫、淘宝等优惠券商品精选，为您提供正品低价的特价商品、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。"/>
+    <script src="./cmsstatic/other/jquery/1.12.4/jquery.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/lib/axios-0.19.0/dist/axios.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/layer/layer.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/swiper.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/clipboard.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/ZeroClipboard.js?v=202001232029"></script>
+    <script src="./cmsstatic/other/jquery-cookie/1.4.1/jquery.cookie.min.js?v=202001232029"></script>
+    <script src="./cmsstatic/web/js/lazyload.js?v=202001232029"></script>
+    <!-- xiaomaigou自定义 -->
+    <script src="./cmsstatic/js/base.js?v=202001232029"></script>
+    <!-- dtk自定义 -->
+    <script src="./cmsstatic/js/dtk.js?v=202001232029"></script>
+
+</head>
+
+<body data-appid="1263486" data-in="1">
+
+<div class="new_home">
+    <div id="headNav">
+        <div id="header">
+            <a class="header_logo" href="index.html?source=index"
+               style=" background: url('')left top no-repeat;">
+                小麦购商城 </a>
+
+            <div id="showList">
+                <div id="search">
+                    <input type="hidden" name="search_kw" id="search_kw" value="打底裤">
+                    <form action="search.html" method="get">
+                        <input type="hidden" name="source" value="search">
+                        <input type="hidden" id="search_introduce" name="introduce" value="1">
+                        <input type="text" autocomplete="off" class="theme-border-color-1 my-src-input" value=""
+                               name="kw" placeholder="打底裤"/>
+                        <span class="src-close-btn"></span>
+                        <button class="theme-bg-color-1 my-src-btn">搜 索</button>
+                    </form>
+                    <!-- 热搜记录 -->
+                    <div class="rec_word" id="rec_word"></div>
+                    <!-- 搜索联想词 -->
+                    <ul class="search-land">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <p>关闭</p>
+                    </ul>
+                </div>
+            </div>
+            <img class="head_group fr" src="./cmsstatic/images/home/headgrup.png?v=202001232029"
+                 alt="">
+        </div>
+        <!-- 悬浮搜索框s -->
+        <!-- 悬浮搜索框e -->
+    </div>
+
+    <div id="baner" class="theme-bg-color-1">
+        <div id="nav">
+            <a data-dtk-satc="{desc:'首页',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8 iconM"
+               target="_blank" href="index.html?source=search">
+                首页
+            </a>
+            <a data-dtk-satc="{desc:'好货精选',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8 active"
+               data-ca="index/search----l/search"
+               href="hhjx.html?source=search">
+                好货精选
+            </a>
+            <a data-dtk-satc="{desc:'疯抢榜',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/search----p/search"
+               target="_blank" href="fqb.html?source=search">
+                疯抢榜
+            </a>
+            <a data-dtk-satc="{desc:'9块9包邮',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/search----nine/search"
+               target="_blank" href="nine.html?source=search">
+                9块9包邮
+            </a>
+            <a data-dtk-satc="{desc:'咚咚抢',name:'CmsPcPartEvent'}" class="theme-hover-bg-color-8"
+               data-ca="index/search----ddq/search"
+               target="_blank" href="ddq.html?source=search">
+                咚咚抢
+            </a>
+        </div>
+    </div>
+
+    <div id="dtk_mian">
+        <div class="year-bg">
+            <div class="goods_screen_tab">
+                <a href="index.html?source=search" class="all fl">全部商品 <i></i></a>
+                <div class="label-list">
+
+                </div>
+                <span class="num"> "美女" 共 <i>72</i> 款相关商品</span>
+            </div>
+            <div class="cat-wrap main-container">
+                <div class="cat-list clearfix">
+                    <span class="cat-lit-title">类目 : </span>
+                    <ul class="clearfix">
+                        <li data-dtk-satc="{desc:'居家日用',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="居家日用">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=居家日用&s=t&input=2&u=1263486&cid=4">
+                                居家日用 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'美食',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="美食">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=美食&s=t&input=2&u=1263486&cid=6">
+                                美食 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'母婴',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="母婴">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=母婴&s=t&input=2&u=1263486&cid=2">
+                                母婴 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'美妆',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="美妆">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=美妆&s=t&input=2&u=1263486&cid=3">
+                                美妆 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'女装',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="女装">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=女装&s=t&input=2&u=1263486&cid=1">
+                                女装 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'数码家电',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="数码家电">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=数码家电&s=t&input=2&u=1263486&cid=8">
+                                数码家电 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'文娱车品',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="文娱车品">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=文娱车品&s=t&input=2&u=1263486&cid=7">
+                                文娱车品 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'内衣',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="内衣">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=内衣&s=t&input=2&u=1263486&cid=10">
+                                内衣 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'鞋品',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="鞋品">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=鞋品&s=t&input=2&u=1263486&cid=5">
+                                鞋品 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'男装',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="男装">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=男装&s=t&input=2&u=1263486&cid=9">
+                                男装 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'配饰',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="配饰">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=配饰&s=t&input=2&u=1263486&cid=12">
+                                配饰 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'户外运动',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="户外运动">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=户外运动&s=t&input=2&u=1263486&cid=13">
+                                户外运动 </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'箱包',name:'CmsPcCidEvent'}" class="lem theme-hover-color-1 "
+                            data-name="箱包">
+                            <a class="theme-a" data-page="page=1"
+                               href="search.html?source=index&r=l&kw=箱包&s=t&input=2&u=1263486&cid=11">
+                                箱包 </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="brand cat-list">
+                    <span class="cat-lit-title">品牌 : </span>
+                    <ul>
+                        <li data-dtk-satc="{desc:'韩束',name:'CmsPcBrandCidEvent'}" class="">
+                            <a href="search.html?source=index&r=l&kw=韩束&s=t&input=2&u=1263486&bids=3328525">
+                                <img src="https://img.alicdn.com/bao/uploaded///img.taobaocdn.com/tps/TB1hTrTn_vI8KJjSspjXXcgjXXa"
+                                     width="85" height="45" alt="">
+                            </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'菲诗小铺',name:'CmsPcBrandCidEvent'}" class="">
+                            <a href="search.html?source=index&r=l&kw=菲诗小铺&s=t&input=2&u=1263486&bids=27133">
+                                <img src="https://img.alicdn.com/bao/uploaded///img.taobaocdn.com/tps/TB1Dn8MMFXXXXaWXpXXSutbFXXX.jpg"
+                                     width="85" height="45" alt="">
+                            </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'春纪',name:'CmsPcBrandCidEvent'}" class="">
+                            <a href="search.html?source=index&r=l&kw=春纪&s=t&input=2&u=1263486&bids=3288847">
+                                <img src="https://img.alicdn.com/bao/uploaded///img.taobaocdn.com/tps/TB1AyX5nr_I8KJjy1XaXXbsxpXa"
+                                     width="85" height="45" alt="">
+                            </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'海俪恩',name:'CmsPcBrandCidEvent'}" class="">
+                            <a href="search.html?source=index&r=l&kw=海俪恩&s=t&input=2&u=1263486&bids=78761847">
+                                <img src="https://img.alicdn.com/bao/uploaded///img.taobaocdn.com/tps/TB1C_GHbxGYBuNjy0FnXXX5lpXa"
+                                     width="85" height="45" alt="">
+                            </a>
+                        </li>
+                        <li data-dtk-satc="{desc:'Moveup',name:'CmsPcBrandCidEvent'}" class="">
+                            <a href="search.html?source=index&r=l&kw=Moveup&s=t&input=2&u=1263486&bids=8404926">
+                                <img src="https://img.alicdn.com/bao/uploaded///img.taobaocdn.com/tps/TB1lF1LIrSYBuNjSspiXXXNzpXa"
+                                     width="85" height="45" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="brand-man more fr ">更多</div>
+                    <div class="cf"></div>
+                </div>
+
+                <script>
+                    if ($('.brand.cat-list li').length > 10) {
+                        $('.brand-man').show().on('click', function () {
+                            if ($(this).hasClass('more')) {
+                                $(this).removeClass('more').addClass('less').html('收起');
+                                $('.cat-list.brand').css('height', 'auto');
+                            } else {
+                                $(this).removeClass('less').addClass('more').html('更多');
+                                $('.cat-list.brand').css('height', '80px');
+                            }
+                        });
+                    }
+                </script>
+            </div>
+            <div class="search-all">
+                <div class="tag-wrap main-container clearfix cat-wrap">
+                    <div class="fixed-wrap fl theme-a-hover-active-border-top-1">
+                        <a data-dtk-satc="{desc:'综合',name:'CmsPcSortEvent'}"
+                           href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486"
+                           class="tag-fixed active">综合</a>
+                        <a data-dtk-satc="{desc:'最新',name:'CmsPcSortEvent'}"
+                           href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=latest&input=2&u=1263486"
+                           class="tag-fixed ">最新</a>
+                        <a data-dtk-satc="{desc:'销量',name:'CmsPcSortEvent'}"
+                           href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=sell&input=2&u=1263486"
+                           class="tag-fixed ">销量</a>
+                        <a data-dtk-satc="{desc:'价格',name:'CmsPcSortEvent'}"
+                           href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=price&input=2&u=1263486"
+                           class="tag-fixed ">价格</a>
+                        <div class="sort-price-area fl">
+                            <form action="search.html?source=index">
+                                <input type='hidden' name="kw" value="美女">
+                                <input type='hidden' name="s" value="t">
+                                <input type='hidden' name="input" value="2">
+                                <input type='hidden' name="u" value="1263486">
+                                <input type="hidden" name="r" value="l">
+                                <input class="min-price" name="jgqj1" value="" placeholder="￥"/>
+                                <span>-</span>
+                                <input class="max-price" name="jgqj2" value="" placeholder="￥"/>
+                                <button class="theme-bg-color-1 theme-hover-bg-color-3" id="sortSeachSubmit">确认</button>
+                                <a class="clear-price"
+                                   href="search.html?source=index&r=l&u=1263486&kw=美女&s=t&input=2&u=1263486">清除</a>
+                            </form>
+                            <script>
+                                $('#sortSeachSubmit').on('click', function (event) {
+                                    event.preventDefault();
+                                    var jgqj1 = $('input[name="jgqj1"]').val();
+                                    var jgqj2 = $('input[name="jgqj2"]').val();
+                                    /* Act on the event */
+                                    if (jgqj1 == "" || jgqj2 == "") {
+                                        return false;
+                                    }
+                                    DTKsatc.eventStat({
+                                        name: "CmsPcSortEvent",
+                                        params: {desc: $('input[name="jgqj1"]').val() + '_' + $('input[name="jgqj2"]').val()}
+                                    })
+                                });
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="goods-pages-page clearfix" style=''>
+
+                        <span class="pagebtn disabled pre-page"></span>
+
+                        <span class="page-num"><b>1</b>/1</span>
+
+                        <span class="pagebtn disabled next-page"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat-wrap main-container sx">
+                <div class="cat-list sale-type clearfix">
+                    <ul class="clearfix">
+
+                        <li data-dtk-satc="{desc:'淘抢购',name:'CmsPcShopEvent'}" class="theme-hover-color-1 ">
+                            <a class="theme-a"
+                               href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486&hd=2"><i
+                                    class="theme-i"></i><span>淘抢购</span></a>
+                        </li>
+                        <li data-dtk-satc="{desc:'聚划算',name:'CmsPcShopEvent'}" class="theme-hover-color-1 ">
+                            <a class="theme-a"
+                               href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486&hd=3"><i
+                                    class="theme-i"></i><span>聚划算</span></a>
+                        </li>
+                        <li data-dtk-satc="{desc:'精选品牌',name:'CmsPcShopEvent'}" class="theme-hover-color-1 ">
+                            <a class="theme-a"
+                               href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486&pinpai=1"><i
+                                    class="theme-i"></i><span>精选品牌</span></a>
+                        </li>
+                        <li data-dtk-satc="{desc:'海淘',name:'CmsPcShopEvent'}" class="theme-hover-color-1 ">
+                            <a class="theme-a"
+                               href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486&amoy=1"><i
+                                    class="theme-i"></i><span>海淘</span></a>
+                        </li>
+                        <li data-dtk-satc="{desc:'金牌卖家',name:'CmsPcShopEvent'}" class="theme-hover-color-1 ">
+                            <a class="theme-a"
+                               href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486&tmall=2"><i
+                                    class="theme-i"></i><span>金牌卖家</span></a>
+                        </li>
+                        <li data-dtk-satc="{desc:'天猫',name:'CmsPcShopEvent'}" class="theme-hover-color-1 ">
+                            <a class="theme-a"
+                               href="search.html?source=index&r=l&kw=%E7%BE%8E%E5%A5%B3&s=t&input=2&u=1263486&tmall=1"><i
+                                    class="theme-i"></i><span>天猫</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="goods-list main-container new_comp">
+                <ul class="clearfix" id="goodsItems">
+                </ul>
+                <div class="pager main-container" style="margin: 20px auto;">
+                    <div id="yw0" class="pager">
+                        <a class="pre-page" id="prePage" href="#dtk_mian">上一页</a>
+                        <a class="item cur" id="currentPage" href="javascript:void(0);" >1</a>
+                        <a class="next-page" id="nextPage" href="#dtk_mian">下一页</a>
+                    </div>
+                </div>
+
+                <script>
+                    $('.no-result a').click(function () {
+                        history.back();
+                    });
+                    var regNum = new RegExp("^[0-9]*$"), isNotnum = [0, 0];
+                    var testNum = function (obj, n) {
+                        if (isNaN(Number(obj.val()))) {
+                            obj.val('0');
+                        }
+                        isNotnum[n] = 1;
+                    }
+                    testNum($('.min-price'), 0);
+                    testNum($('.max-price'), 1);
+
+                    $('.min-price').blur(function () {
+                        testNum($('.min-price'), 0);
+                    })
+                    $('.max-price').blur(function () {
+                        testNum($('.max-price'), 1);
+                    })
+                    $('.sort-price-area form button').click(function () {
+
+                        if (isNotnum[0] == 1 && isNotnum[1] == 1 && $.trim($('.max-price').val()) && $.trim($('.min-price').val())) {
+                            var maxNum = Math.max(Number($('.max-price').val()), Number($('.min-price').val())),
+                                minNum = Math.min(Number($('.max-price').val()), Number($('.min-price').val()));
+                            $('.max-price').val(maxNum);
+                            $('.min-price').val(minNum);
+                        }
+                        $('.sort-price-area form').submit();
+                    })
+                    $(window).load(function () {
+                        /*触发mta 打开详细也统计*/
+                        MtaH5.clickStat("showpage", {
+                            uid: $cmsApi.getMtaCookie(),
+                            time: ((new Date()).getHours() < 10 ? "0" + (new Date()).getHours() : (new Date()).getHours()) + ":" + ((new Date()).getMinutes() < 10 ? "0" + (new Date()).getMinutes() : (new Date()).getMinutes()),
+                            name: "类目",
+                            'siteid': standId,
+                            'domainid': window.location.hostname.replace("www.", "")
+                        })
+                    })
+
+
+                    $('.switch-quan').on('click', 'input', function () {
+                        var $this = $(this);
+                        if ($this.is(':checked')) {
+                            $this.parent('.switch-quan').removeClass('close').addClass('open');
+                        } else {
+                            $this.parent('.switch-quan').removeClass('open').addClass('close');
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+
+        <script>
+            // 工具栏加入收藏
+            function addFavorite() {
+                var url = window.location;
+                var title = document.title;
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.indexOf("msie 8") > -1) {
+                    external.AddToFavoritesBar(url, title, '');//IE8
+                } else {
+                    try {
+                        window.external.addFavorite(url, title);
+                    } catch (e) {
+                        try {
+                            window.sidebar.addPanel(title, url, "");//firefox
+                        } catch (e) {
+                            layer.msg("加入收藏失败，请使用Ctrl+D进行添加");
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <ul class="float-tool">
+            <li onclick="shoucang('我的网站',location.href)"><img
+                    src="./cmsstatic/images/home/sc.png?v=202001232029" alt="">
+                <p>收藏</p></li>
+            <li class="ft-share"><img src="./cmsstatic/images/home/share.png?v=202001232029" alt="">
+                <p>分享</p>
+                <div class="share-platform">
+                    <div class="share-platform-r">
+                        <div class="bshare-custom bdsharebuttonbox bdshare-button-style1-32">
+                            <a title="分享到微信" class="bshare-weixin bds_weixin"></a>
+                            <a title="分享到新浪微博" class="bshare-sinaminiblog bds_tsina"></a>
+                            <a title="分享到QQ好友" class="bshare-qqim bds_sqq"></a>
+                            <a title="分享到QQ空间" class="bshare-qzone bds_qzone"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<script type="text/javascript" charset="utf-8"-->
+                <!--src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script>-->
+                <!--<script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script>-->
+
+            </li>
+            <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=923782299&site=qq&menu=yes"><img
+                    src="./cmsstatic/images/home/kf.png?v=202001232029" alt=""></a>
+                <p>客服</p></li>
+            <li><a href="feedbackpc.html?source=index" target="_blank"><img
+                    src="./cmsstatic/images/home/feedback.png?v=202001232029" alt="">
+                <p>反馈</p></a></li>
+            <li class="to_top" onclick=" $('body,html').animate({scrollTop:0},1000);">
+                <img style="padding-top: 12px;" src="./cmsstatic/images/home/top.png?v=202001232029" alt=""></li>
+        </ul>
+
+        <script>
+            var standId = 1263486;
+            var MtaH5 = {
+                clickShare: function () {
+                },
+                clickStat: function () {
+                },
+                hack: function () {
+                },
+                pgv: function () {
+                }
+            };
+            var getCookie = function (name) {
+                var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+                if (arr = document.cookie.match(reg))
+                    return unescape(arr[2]);
+                else
+                    return null;
+            };
+            var _mtac = {"performanceMonitor": 1, "senseQuery": 1};
+            // (function () {
+            //     var mta = document.createElement("script");
+            //     mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+            //     mta.setAttribute("name", "MTAH5");
+            //     /*mta.setAttribute("sid", "500628441");
+            //         mta.setAttribute("cid", "500628444");*/
+            //     mta.setAttribute("sid", "500626642");
+            //     mta.setAttribute("cid", "500626643");
+            //
+            //     var s = document.getElementsByTagName("script")[0];
+            //     s.parentNode.insertBefore(mta, s);
+            // })();
+            // DTK统计代码
+            // (function () {
+            //     var script = document.createElement("script");
+            //     var time = new Date(), FullYear = time.getFullYear(), Month = time.getMonth(), getDate = time.getDate();
+            //     script.src = "./cmsstatic/satc/dest/js/dtksatc.js?v=202001232029";
+            //     script.setAttribute("name", "DTKSATC");
+            //     script.setAttribute("tid", "dtk-cms-1263486"); // 站点id
+            //     script.setAttribute("uid", getCookie("user_id")); // 登录用户id
+            //     var s = document.getElementsByTagName("script")[0];
+            //     s.parentNode.insertBefore(script, s);
+            // })();
+        </script>
+
+        <div id="footer" class="com-footer" style="height: auto">
+            <div class="footer-wrapper" style="padding: 45px 0 10px;">
+                <ul>
+                    <li>网站导航</li>
+                    <li><a href="index.html?source=index">首页</a></li>
+                    <li><a href="hhjx.html?source=index">好货精选</a></li>
+                    <li><a href="fqb.html?source=index">疯抢榜</a></li>
+                    <li><a href="ddq.html?source=index">咚咚抢</a></li>
+                    <li><a href="nine.html?source=index">9.9包邮</a></li>
+                </ul>
+                <p>小麦购商城是一家中立的导购网站，网站中的商品信息均来自于互联网。如商品信息不同，可能是商品信息未及时更新，所有商品信息请以天猫/淘宝店铺内为准。</p>
+
+                <div class="text">
+                    <span>版权所有 本站内容未经书面许可,禁止一切形式的转载</span>
+                    <span class="ml">
+                    <!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");-->
+                        <!--document.write(unescape("%3Cspan id='cnzz_stat_icon_1277710951'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1277710951%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>-->
+                    &copy; CopyRight&nbsp;2020</span>
+                    <a class="ml" href="//www.xiaomaigou.com" target="_blank" rel="nofollow">
+                        小麦购商城XiaoMaiGou.COM </a>
+                    <a class="miitbeian ml" href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow">
+                    </a>
+                    <a href="feedbackpc.html?source=index" target="_blank"
+                       style="margin-left: 20px;text-decoration: underline;">我要反馈</a>
+                    <p class="ml" style="text-algin:center;margin: 15px auto;"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./cmsstatic/js/scrollTop2.js?v=202001232029"></script>
+    <!-- xiaomaigou自定义 -->
+    <script src="./cmsstatic/js/service/headService.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/show/headShow.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/controller/headController.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/service/searchService.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/show/searchShow.js?v=202001232029"></script>
+    <script src="./cmsstatic/js/controller/searchController.js?v=202001232029"></script>
+    <script src="./cmsstatic/wap_new/lib/md5.js?v=202001232029"></script>
+</body>
+</html>

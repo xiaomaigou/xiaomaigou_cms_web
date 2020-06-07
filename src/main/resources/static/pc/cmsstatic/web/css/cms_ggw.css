@@ -1,0 +1,271 @@
+/**
+ * static.cms - v1.0.0  License By 
+ * WEB小组  
+ */
+.ggw_fm, .ggw_fm img {
+    max-width: 600px;
+    max-height: 600px
+}
+
+.cms_ggw {
+    overflow: hidden;
+    text-align: center
+}
+
+.img_size {
+    position: absolute;
+    z-index: -100;
+    height: 0;
+    width: 0;
+    overflow: hidden
+}
+
+.ggw_fm_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/close_x.png?v=202001232029) center center no-repeat;
+    text-align: center;
+    visibility: visible;
+    cursor: pointer
+}
+
+@-webkit-keyframes picanim {
+    0% {
+        -webkit-transform: translate3d(0, -2%, 0)
+    }
+    100% {
+        -webkit-transform: translate3d(0, 2%, 0)
+    }
+}
+
+@-moz-keyframes picanim {
+    0% {
+        -moz-transform: translate3d(0, -2%, 0)
+    }
+    100% {
+        -moz-transform: translate3d(0, 2%, 0)
+    }
+}
+
+@-o-keyframes picanim {
+    0% {
+        -o-transform: translate3d(0, -2%, 0)
+    }
+    100% {
+        -o-transform: translate3d(0, 2%, 0)
+    }
+}
+
+@-ms-keyframes picanim {
+    0% {
+        -ms-transform: translate3d(0, -2%, 0)
+    }
+    100% {
+        -ms-transform: translate3d(0, 2%, 0)
+    }
+}
+
+@keyframes picanim {
+    0% {
+        transform: translate3d(0, -2%, 0)
+    }
+    100% {
+        transform: translate3d(0, 2%, 0)
+    }
+}
+
+.ggw_fr {
+    overflow: inherit;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-animation: picanim 1s ease-in-out infinite alternate;
+    -moz-animation: picanim 1s ease-in-out infinite alternate;
+    -o-animation: picanim 1s ease-in-out infinite alternate;
+    -ms-animation: picanim 1s ease-in-out infinite alternate;
+    animation: picanim 1s ease-in-out infinite alternate
+}
+
+.ggw_fr .ggw_fr_main {
+    position: relative
+}
+
+.ggw_fr .ggw_fr_main .ggw_fm_close {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff
+}
+
+.layui-layer {
+    background: 0 0;
+    box-shadow: none
+}
+
+.ggw_fr img {
+    max-width: 300px;
+    max-height: 360px
+}
+
+.ggw_fr a {
+    float: left
+}
+
+.ggw_fr:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    animation-play-state: paused;
+    -webkit-filter: drop-shadow(0 25px 5px rgba(0, 0, 0, .2));
+    -moz-filter: drop-shadow(0 25px 5px rgba(0, 0, 0, .2));
+    -o-filter: drop-shadow(0 25px 5px rgba(0, 0, 0, .2));
+    -ms-filter: drop-shadow(0 25px 5px rgba(0, 0, 0, .2));
+    filter: drop-shadow(0 25px 5px rgba(0, 0, 0, .2))
+}
+
+#testTop .ggw_fm_close {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px
+}
+
+.ggw_fm, .ggw_fm_cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.ggw_fm {
+    z-index: 9999995555555;
+    height: 120%;
+    display: flex
+}
+
+.cms_ggw img {
+    vertical-align: middle;
+    width: 100%
+}
+
+.ggw_fm_cover {
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: 998
+}
+
+.ggw_fm_main {
+    z-index: 999;
+    width: 100%;
+    position: relative
+}
+
+.ggw_fm_main a {
+    display: block
+}
+
+.ggw_fm_main a img {
+    vertical-align: top
+}
+
+.ggw_fm .ggw_fm_close_box, .ggw_fm_main .ggw_fm_close, .ggw_fm_swiper .ggw_fm_close {
+    z-index: 99999901;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: url(../images/close_x.svg?v=202001232029) center center no-repeat rgba(0, 0, 0, .15);
+    background-size: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.ggw_fr {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    margin-top: -35px;
+    right: 0;
+    z-index: 99
+}
+
+.ggw_fr_main .ggw_fm_close {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/close_x.svg?v=202001232029) center center no-repeat rgba(0, 0, 0, .15);
+    background-size: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.ggw_fr_main {
+    display: block;
+    position: relative
+}
+
+.ggw_fm .ggw_fm_close_box {
+    position: absolute
+}
+
+.ggw_fm_swiper .ggw_fm_close {
+    position: absolute;
+    z-index: 50;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px
+}
+
+.ggw_fm_close {
+    z-index: 9999
+}
+
+.ggw_cok.ggw_fm {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100%
+}
+
+.ggw_cok.ggw_fm .ggw_fm_main a img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 450px
+}
+
+.ggw_cok.layui-layer-wrap .ggw_fm_main a img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px
+}

@@ -1,0 +1,111 @@
+/**
+ * static.cms - v1.0.0  License By 
+ * WEB小组  
+ */
+.pager .next-page, .pager .pre-page {
+    box-shadow: rgba(204, 204, 204, .701961) 1px 1px 3px 0;
+    font-family: "新宋体", "宋体", Arial SimSun, 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    font-style: normal;
+    font-variant: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 90px;
+    font-weight: 700
+}
+
+.pager .item, .pager .next-page, .pager .pre-page {
+    display: inline-block;
+    font-size: 14px;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    text-decoration: none
+}
+
+.pager, .pager .item, .pager .next-page, .pager .pre-page {
+    text-align: center
+}
+
+.pager *, .pager .item, .pager .next-page, .pager .pre-page {
+    text-decoration: none
+}
+
+.pager .cur, .pager .more {
+    cursor: default
+}
+
+.pager .pre-page {
+    background-color: #fff;
+    border-color: #bbb;
+    border-bottom-left-radius: 20px;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    color: #919191;
+    margin-left: 1px
+}
+
+.pager .pre-page:hover {
+    background: #f36;
+    border: none;
+    color: #fff;
+    font-weight: 700
+}
+
+.pager .next-page {
+    background-color: #fff;
+    border-color: #bbb;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #919191
+}
+
+.pager .next-page:hover {
+    background: #f36;
+    border: none;
+    color: #fff;
+    font-weight: 700
+}
+
+.pager .item {
+    -webkit-box-shadow: rgba(204, 204, 204, .701961) 1px 1px 0 0;
+    background-clip: border-box;
+    background-color: #fff;
+    border-color: #919191;
+    box-shadow: rgba(204, 204, 204, .701961) 1px 1px 0 0;
+    color: #919191;
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 0 16px;
+    margin: 0 -1px
+}
+
+.pager .cur, .pager .item:hover {
+    background: #f36;
+    color: #fff;
+    font-weight: 700;
+    border: none
+}
+
+.pager .disabled {
+    color: #bbb;
+    font-weight: 400;
+    cursor: default
+}
+
+.pager .disabled:hover {
+    background: #FFF;
+    border: none;
+    color: #bbb;
+    font-weight: 400
+}
+
+.pager .more:hover {
+    background: #FFF;
+    border: none;
+    color: #919191;
+    font-weight: 700
+}

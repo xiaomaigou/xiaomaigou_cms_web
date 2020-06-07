@@ -1,0 +1,1487 @@
+/**
+ * static.cms - v1.0.0  License By 
+ * WEB小组  
+ */
+body #rqModule .chkNav .left span input, body #zhiboModule .chkNav .left span input {
+    vertical-align: middle
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(./font/font_653505_5sv2ewtw3lrkvs4i.eot?v=202001232029);
+    src: url(./font/font_653505_5sv2ewtw3lrkvs4i.eot?#iefix?v=202001232029) format('embedded-opentype'), url(./font/font_653505_5sv2ewtw3lrkvs4i.woff?v=202001232029) format('woff'), url(./font/font_653505_5sv2ewtw3lrkvs4i.ttf?v=202001232029) format('truetype'), url(./font/font_653505_5sv2ewtw3lrkvs4i.svg#iconfont?v=202001232029) format('svg')
+}
+
+.fl {
+    float: left
+}
+
+.hide {
+    display: none
+}
+
+body {
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #757575
+}
+
+body .clear {
+    clear: both
+}
+
+body .flagRed {
+    color: red
+}
+
+body #navTop {
+    width: 100%
+}
+
+body #navTop #top {
+    font-size: 12px;
+    width: 1200px;
+    margin: 0 auto
+}
+
+body #navTop #top #topleft {
+    display: inline-block;
+    float: left;
+    margin: 4px 0
+}
+
+body #navTop #top #topright {
+    float: right
+}
+
+body #navTop #top #topright li {
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 4px 8px
+}
+
+body #headNav {
+    background-color: #fff;
+    width: 100%
+}
+
+body #headNav #header {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 6px 0
+}
+
+body #headNav #header #logo {
+    float: left;
+    margin-top: 5px
+}
+
+body #headNav #header #showList {
+    display: inline-block;
+    float: right;
+    width: 750px
+}
+
+body #headNav #header #showList dl {
+    float: left
+}
+
+body #headNav #header #showList dl dt {
+    width: 60px;
+    height: 70px
+}
+
+body #headNav #header #showList dl .rg {
+    background-image: url(../images/baozhang.png?v=202001232029);
+    background-position: 0 1px
+}
+
+body #headNav #header #showList dl .zy {
+    background-image: url(../images/baozhang.png?v=202001232029);
+    background-position: 0 -77px
+}
+
+body #headNav #header #showList dl .qc {
+    background-image: url(../images/baozhang.png?v=202001232029);
+    background-position: 0 -151px
+}
+
+body #headNav #header #showList #search {
+    float: left;
+    margin-right: 40px;
+    margin-top: 15px
+}
+
+body #headNav #header #showList #search input {
+    height: 33px;
+    width: 295px;
+    float: left;
+    padding: 0 20px;
+    border: 2px solid #f00582;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei"
+}
+
+body #headNav #header #showList #search button {
+    display: inline-block;
+    background-color: #f00582;
+    color: #fff;
+    letter-spacing: 2px;
+    float: right;
+    border: 0;
+    line-height: 21px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+
+body #baner {
+    width: 100%;
+    background-color: #f00582
+}
+
+body #baner #nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative
+}
+
+body #baner #nav a {
+    color: #fff;
+    width: 126px;
+    padding: 12px 27px;
+    display: inline-block;
+    text-align: center
+}
+
+body #baner #nav a.app_download {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+    text-indent: 17px
+}
+
+body #baner #nav a.app_download b {
+    font: 16px Arial
+}
+
+body #baner #nav a.app_download i {
+    position: absolute;
+    left: 32px;
+    background: url(../images/cms_mobile.png?v=202001232029);
+    width: 9px;
+    height: 14px;
+    top: 11px
+}
+
+body #baner #nav a.lq_live {
+    position: relative
+}
+
+body #baner #nav a.app_download .app_wechat {
+    position: absolute;
+    top: 35px;
+    width: 160px;
+    text-align: center;
+    z-index: 99999;
+    text-indent: 0;
+    background: #fff;
+    color: #aaa;
+    right: 0;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .07);
+    padding: 10px 0 20px
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img {
+    margin-top: -15px;
+    padding: 28px 0 0
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .img_blok {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    position: relative;
+    z-index: 0;
+    top: 10px
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .img_blok.two {
+    width: 49%
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .img_blok:first-child {
+    border-right: none
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .img_blok.two:first-child {
+    border-right: 1px solid #eee
+}
+
+body #baner #nav a.app_download .app_wechat .qr-ap, body #baner #nav a.app_download .app_wechat .qr-ard {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: #fff;
+    color: #333
+}
+
+body #baner #nav .active, body #baner #nav a:focus, body #baner #nav a:hover {
+    background-color: #bd166f
+}
+
+body #baner #nav a.app_download .app_wechat .qr-ap img, body #baner #nav a.app_download .app_wechat .qr-ard img {
+    width: 90%;
+    display: block;
+    margin-left: -5px
+}
+
+body #baner #nav a.app_download .app_wechat .qr-ap p, body #baner #nav a.app_download .app_wechat .qr-ard p {
+    margin-left: -20px
+}
+
+body #baner #nav a.app_download .app_wechat .qr-ard {
+    left: 20px
+}
+
+#nav a.app_download .app_wechat:after {
+    top: -9px;
+    border-bottom: 10px solid #fff
+}
+
+body #baner #nav a.app_download .app_wechat span {
+    display: block;
+    font: 14px/14px "Microsoft Yahei"
+}
+
+body #baner #nav a.iconH .iconfont, body #baner #nav a.iconM .iconfont, body #indexBg .topMain .left ul li .iconfont, body #indexMain .indexPinZhi .pzOne .pzThree .one .iconfont {
+    font-family: iconfont;
+    font-style: normal
+}
+
+body #baner #nav a.app_download.hover .app_wechat {
+    display: block
+}
+
+body #baner #nav a.iconM {
+    position: relative;
+    width: 176px;
+    text-align: center
+}
+
+body #baner #nav a.iconM .iconfont {
+    position: relative;
+    font-size: 14px;
+    left: -5px;
+    top: 0
+}
+
+body #baner #nav a.iconH {
+    position: relative
+}
+
+body #baner #nav a.iconH .iconfont {
+    font-size: 30px;
+    position: absolute;
+    top: -6px;
+    color: #ff0;
+    right: 22px
+}
+
+body #indexBg {
+    width: 100%;
+    background-color: #fff
+}
+
+body #indexBg .topMain {
+    width: 1200px;
+    margin: 0 auto
+}
+
+body #indexBg .topMain .left {
+    float: left;
+    display: inline-block;
+    width: 180px;
+    background-color: #fbe9f3
+}
+
+body #indexBg .topMain .left ul {
+    padding-top: 4px
+}
+
+body #indexBg .topMain .left ul li {
+    padding: 8px 35px;
+    position: relative
+}
+
+body #indexBg .topMain .left ul li a {
+    color: #757575;
+    margin-left: 39px
+}
+
+body #indexBg .topMain .left ul li .iconfont {
+    position: absolute;
+    top: 8px;
+    color: #ff69b4;
+    left: 50px
+}
+
+body #indexBg .topMain .left ul li:hover {
+    background-color: #ff6700
+}
+
+body #indexBg .topMain .left ul li:hover a {
+    color: #fff
+}
+
+body #indexBg .topMain .left ul li:hover .iconfont {
+    background-color: #fff
+}
+
+body #indexBg .topMain .middle {
+    float: left;
+    display: inline-block;
+    width: 720px
+}
+
+body #indexBg .topMain .middle img {
+    float: left
+}
+
+body #indexBg .topMain .right {
+    float: left;
+    display: inline-block;
+    width: 300px;
+    background-color: #2c3e50
+}
+
+body #indexBg .topMain .right img {
+    float: left
+}
+
+body #indexMain {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 500px;
+    background-color: #fff;
+    padding-top: 10px
+}
+
+body #indexMain .hua {
+    margin: 10px 0;
+    padding: 12px 10px;
+    background-color: #f8f7c8;
+    color: #757575;
+    letter-spacing: 1px;
+    font-weight: 700
+}
+
+body #indexMain .indexLingQuanNav {
+    margin-top: 20px;
+    margin-bottom: 25px
+}
+
+body #indexMain .indexLingQuanNav .indexLeft {
+    display: inline-block;
+    float: left;
+    color: #df75ad
+}
+
+body #indexMain .indexLingQuanNav .indexLeft .a {
+    font-size: 24px;
+    color: #675D5D;
+    letter-spacing: 2px
+}
+
+body #indexMain .indexLingQuanNav .indexLeft .b {
+    margin-left: 20px;
+    margin-right: 6px
+}
+
+body #indexMain .indexLingQuanNav .indexLeft .c {
+    margin-right: 8px;
+    letter-spacing: 1.9px
+}
+
+body #indexMain .indexLingQuanNav .indexLeft .e {
+    margin-left: 8px;
+    letter-spacing: 2px
+}
+
+body #indexMain .indexLingQuanNav .indexRight {
+    float: right;
+    display: inline-block;
+    padding-top: 8px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-right: 14px;
+    color: #df75ad
+}
+
+body #indexMain .lingQuanJinList .oneQuanRight {
+    float: right
+}
+
+body #indexMain .lingQuanJinList .oneQuan {
+    background-color: rgba(232, 191, 191, .19);
+    width: 580px;
+    display: inline-block;
+    margin-bottom: 14px;
+    border: 1px solid #fff;
+    color: #696666
+}
+
+body #indexMain .lingQuanJinList .oneQuan .imgLeft {
+    float: left
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight {
+    width: 282px;
+    float: right;
+    display: inline-block;
+    padding: 10px 14px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight div {
+    display: inline-block
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexTitle {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #696666
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexTwo {
+    margin: 6px 0;
+    color: #df75ad;
+    font-size: 15px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexTwo .iconfont {
+    font-family: iconfont;
+    font-style: normal;
+    font-size: 15px;
+    margin-right: 3px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexTwo em {
+    font-size: 18px;
+    margin: 0 6px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinThree {
+    margin: 8px 0;
+    font-size: 12px;
+    letter-spacing: 1px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinThree i {
+    margin: 0 4px;
+    color: #df75ad;
+    letter-spacing: 0;
+    font-size: 14px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFour {
+    background-color: #ea2a60;
+    margin: 3px 0;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    letter-spacing: 1px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFour span {
+    margin-left: 12px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFour span em {
+    font-size: 34px;
+    margin-right: 20px;
+    font-weight: 400
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFive {
+    font-size: 14px;
+    margin: 17px 0
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFive a {
+    display: inline-block
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFive .indexBorder {
+    border: 1px dashed red;
+    padding: 8px;
+    border-radius: 4px;
+    color: red;
+    display: inline-block;
+    cursor: pointer
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTitle, body #indexMain .indexPinZhi .pzOne .pzTwo {
+    padding: 4px 8px
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFive .indexBorder:hover {
+    background-color: #ff0
+}
+
+body #indexMain .lingQuanJinList .oneQuan .indexJinRight .indexJinFive .indexto {
+    line-height: 18px;
+    font-size: 18px;
+    margin: 0 13px;
+    text-align: center;
+    display: inline-block
+}
+
+body #indexMain .lingQuanJinList .oneQuan:hover {
+    border: 1px solid red;
+    border-radius: 4px
+}
+
+body #indexMain .indexPinZhi .pzOne {
+    margin-right: 7px;
+    display: inline-block;
+    box-shadow: 2px 5px 5px #888
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTitle .pzSpanTime {
+    display: inline-block;
+    margin-left: 4px;
+    color: #f37ea5
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTitle .pzSpanTitle {
+    display: inline-block
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTwo .one {
+    float: left
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTwo .one label {
+    color: #df1956
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTwo .one i {
+    font-size: 22px;
+    color: #df1956;
+    display: inline-block;
+    margin-right: 10px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTwo .one em {
+    color: #fff;
+    background-color: #d85c85;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTwo .two {
+    float: right;
+    padding-top: 8px;
+    margin-right: 16px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzTwo .two i {
+    color: #8a2be2;
+    margin-left: 6px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzThree {
+    padding: 4px 8px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzThree .one {
+    display: inline-block;
+    padding-top: 9px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzThree .one .iconfont {
+    margin-right: 8px;
+    margin-left: 4px
+}
+
+body #indexMain .indexPinZhi .pzOne .pzThree .one em {
+    font-weight: 400
+}
+
+body #indexMain .indexPinZhi .pzOne .pzThree .two {
+    float: right
+}
+
+body #indexMain .indexPinZhi .pzOne .pzThree .two a {
+    display: inline-block;
+    margin-right: 8px;
+    background-color: #faebd7;
+    padding: 9px 21px;
+    color: #757575
+}
+
+body #indexMain .indexPinZhi .pzOne:hover {
+    box-shadow: 2px 5px 5px #FBE9F3
+}
+
+body #indexMain .indexYouHuiNav {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    color: #757575
+}
+
+body #indexMain .indexYouHuiNav .indexLeft {
+    float: left
+}
+
+body #indexMain .indexYouHuiNav .indexLeft span {
+    font-size: 24px;
+    letter-spacing: 2px
+}
+
+body #indexMain .indexYouHuiNav .indexLeft .tatal {
+    margin: 0 6px;
+    letter-spacing: 0;
+    font-size: 17px;
+    background-color: #7fffd4;
+    padding: 4px 8px;
+    border-radius: 6px
+}
+
+body #indexMain .indexYouHuiNav .indexRight {
+    float: right;
+    margin-right: 22px
+}
+
+body #indexMain .indexZhiBoList .zbOne {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 18px;
+    width: 284px;
+    border: 1px solid #ccc
+}
+
+body #indexMain .indexZhiBoList .zbOne .pzImgTop {
+    margin: 12px auto 0;
+    display: block
+}
+
+body #indexMain .indexZhiBoList .zbOne .one {
+    padding-left: 6px;
+    margin-top: 16px;
+    margin-bottom: 5px
+}
+
+body #indexMain .indexZhiBoList .zbOne .one .taobaoImg {
+    background-color: red;
+    display: inline-block;
+    float: left;
+    margin-right: 6px;
+    background-image: url(../images/logo_ico.png?v=202001232029);
+    background-position: 0 -24px;
+    width: 17px;
+    height: 17px
+}
+
+body #indexMain .indexZhiBoList .zbOne .two {
+    padding-left: 6px;
+    margin: 8px 0
+}
+
+body #indexMain .indexZhiBoList .zbOne .two span em {
+    color: #f199d0;
+    margin: 0 6px
+}
+
+body #indexMain .indexZhiBoList .zbOne .three {
+    padding-left: 6px;
+    font-size: 16px;
+    background-color: #de366e;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 6px
+}
+
+body #indexMain .indexZhiBoList .zbOne .three em {
+    font-size: 24px;
+    color: #fff
+}
+
+body #indexMain .indexZhiBoList .zbOne .three span .rightSpan {
+    margin-left: 28px
+}
+
+body #indexMain .indexZhiBoList .zbOne .four {
+    position: absolute;
+    top: 0;
+    background-image: url(../images/today_goods.png?v=202001232029);
+    width: 43px;
+    height: 43px;
+    color: #fff
+}
+
+body #indexMain .indexZhiBoList .zbOne .four span {
+    display: inline-block;
+    width: 32px;
+    margin-left: 8px;
+    font-size: 12px
+}
+
+body #zhiboModule {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 500px;
+    background-color: #fff
+}
+
+body #zhiboModule .dtkSearchForm {
+    background-color: #00C1B3;
+    padding: 8px 30px 14px;
+    margin-top: 12px;
+    margin-bottom: 18px
+}
+
+body #zhiboModule .dtkSearchForm .left {
+    float: left;
+    display: inline-block
+}
+
+body #zhiboModule .dtkSearchForm .left .txtLeft {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-top: 12px
+}
+
+body #zhiboModule .dtkSearchForm .left .leftDiv {
+    letter-spacing: 2px;
+    margin-top: 12px;
+    margin-bottom: 20px
+}
+
+body #zhiboModule .dtkSearchForm .right {
+    float: right;
+    display: inline-block
+}
+
+body #zhiboModule .dtkSearchForm .right #searchForm .searchDivIput {
+    margin-top: 22px
+}
+
+body #zhiboModule .dtkSearchForm .right #searchForm .searchDivIput input {
+    width: 160px;
+    line-height: 23px
+}
+
+body #zhiboModule .dtkSearchForm .right #searchForm .searchSpanSel select {
+    width: 66px;
+    line-height: 23px;
+    height: 23px;
+    margin-top: 10px
+}
+
+body #zhiboModule .dtkSearchForm .right #searchForm .searchSpanTj {
+    margin-top: 10px
+}
+
+body #zhiboModule .dtkSearchForm .right #searchForm .searchSpanTj input {
+    padding: 3px 33px
+}
+
+body #zhiboModule .keyNav .left {
+    display: inline-block;
+    float: left
+}
+
+body #zhiboModule .keyNav .left span {
+    margin: 0 8px;
+    cursor: pointer
+}
+
+body #zhiboModule .keyNav .left span:first-child {
+    margin-left: 0
+}
+
+body #zhiboModule .keyNav .right {
+    float: right;
+    display: inline-block
+}
+
+body #zhiboModule .chkNav {
+    margin: 4px 0
+}
+
+body #zhiboModule .chkNav .left {
+    display: inline-block
+}
+
+body #zhiboModule .chkNav .right {
+    display: inline-block
+}
+
+body #zhiboModule .chkNav .right label {
+    margin-left: 20px
+}
+
+body #zhiboModule .quanZhiBoList .zbOne {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 18px;
+    width: 284px;
+    border: 1px solid #ccc
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .pzImgTop {
+    margin: 12px auto 0;
+    display: block
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .one {
+    padding-left: 6px;
+    margin-top: 16px;
+    margin-bottom: 5px
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .one .taobaoImg {
+    background-color: red;
+    display: inline-block;
+    float: left;
+    margin-right: 6px;
+    background-image: url(../images/logo_ico.png?v=202001232029);
+    background-position: 0 -24px;
+    width: 17px;
+    height: 17px
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .two {
+    padding-left: 6px;
+    margin: 8px 0
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .two span em {
+    color: #f199d0;
+    margin: 0 6px
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .three {
+    padding-left: 6px;
+    font-size: 16px;
+    background-color: #de366e;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 6px
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .three em {
+    font-size: 24px;
+    color: #fff
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .three span .rightSpan {
+    margin-left: 28px
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .four {
+    position: absolute;
+    top: 0;
+    background-image: url(../images/today_goods.png?v=202001232029);
+    width: 43px;
+    height: 43px;
+    color: #fff
+}
+
+body #rqModule .keyNav .left span:hover, body #rqModule .keyNav .right span:hover {
+    color: red
+}
+
+body #zhiboModule .quanZhiBoList .zbOne .four span {
+    display: inline-block;
+    width: 32px;
+    margin-left: 8px;
+    font-size: 12px
+}
+
+body #rqModule {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 500px;
+    background-color: #fff
+}
+
+body #rqModule .top {
+    background-color: #00C1B3;
+    height: 77px;
+    width: 100%
+}
+
+body #rqModule .keyNav {
+    margin-top: 30px
+}
+
+body #rqModule .keyNav .left {
+    display: inline-block;
+    float: left
+}
+
+body #rqModule .keyNav .left span {
+    margin: 0 8px;
+    cursor: pointer
+}
+
+body #rqModule .keyNav .left span:first-child {
+    margin-left: 0
+}
+
+body #rqModule .keyNav .right {
+    float: right;
+    display: inline-block;
+    cursor: pointer
+}
+
+body #rqModule .chkNav {
+    margin: 10px 76px 20px
+}
+
+body #rqModule .chkNav .left {
+    display: inline-block
+}
+
+body #rqModule .chkNav .right {
+    display: inline-block
+}
+
+body #rqModule .chkNav .right label {
+    margin-left: 20px
+}
+
+body #rqModule .quanZhiBoList .zbOne {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px 18px;
+    width: 284px;
+    border: 1px solid #ccc
+}
+
+body #rqModule .quanZhiBoList .zbOne .pzImgTop {
+    margin: 12px auto 0;
+    display: block
+}
+
+body #rqModule .quanZhiBoList .zbOne .one {
+    padding-left: 6px;
+    margin-top: 16px;
+    margin-bottom: 5px
+}
+
+body #rqModule .quanZhiBoList .zbOne .one .taobaoImg {
+    background-color: red;
+    display: inline-block;
+    float: left;
+    margin-right: 6px;
+    background-image: url(../images/logo_ico.png?v=202001232029);
+    background-position: 0 -24px;
+    width: 17px;
+    height: 17px
+}
+
+body #rqModule .quanZhiBoList .zbOne .two {
+    padding-left: 6px;
+    margin: 8px 0
+}
+
+body #rqModule .quanZhiBoList .zbOne .two span em {
+    color: #f199d0;
+    margin: 0 6px
+}
+
+body #rqModule .quanZhiBoList .zbOne .three {
+    padding-left: 6px;
+    font-size: 16px;
+    background-color: #de366e;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 6px
+}
+
+body #rqModule .quanZhiBoList .zbOne .three em {
+    font-size: 24px;
+    color: #fff
+}
+
+body #rqModule .quanZhiBoList .zbOne .three span .rightSpan {
+    margin-left: 28px
+}
+
+body #rqModule .quanZhiBoList .zbOne .four {
+    position: absolute;
+    top: 0;
+    background-image: url(../images/today_goods.png?v=202001232029);
+    width: 43px;
+    height: 43px;
+    color: #fff
+}
+
+body #rqModule .quanZhiBoList .zbOne .four span {
+    display: inline-block;
+    width: 32px;
+    margin-left: 8px;
+    font-size: 12px
+}
+
+body #rqModule .quanZhiBoList .zbOne .six {
+    padding: 4px 6px
+}
+
+body #rqModule .quanZhiBoList .zbOne .six i {
+    font-size: 14px;
+    color: #dc143c
+}
+
+body #rqModule .quanZhiBoList .zbOne:hover {
+    box-shadow: 2px 5px 5px #888
+}
+
+.mask11 {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1000000
+}
+
+.mask11 .bg-11-img, .mask11 .close-11-btn {
+    top: 50%;
+    margin-top: -260px;
+    position: absolute
+}
+
+.mask11 .bg-11-img {
+    left: 50%;
+    width: 626px;
+    height: 519px;
+    margin-left: -313px;
+    z-index: 1000001
+}
+
+.mask11 .close-11-btn {
+    left: 50%;
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin-left: 190px;
+    background: url(../images/11-close.png?v=202001232029);
+    z-index: 1000002
+}
+
+.goods-type {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.goods-type i {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    float: left;
+    background: url(../web/images/cms_pc_img.png?v=202001232029) no-repeat
+}
+
+.goods-type i.haitao {
+    background-position-x: -26px
+}
+
+.goods-type i.trans {
+    background-position-x: -104px
+}
+
+.goods-type i.pinpai {
+    background-position-x: -130px
+}
+
+.goods-type i.tmall {
+    background-position-x: -78px
+}
+
+.goods-type i.you {
+    background-position-x: -52px
+}
+
+.goods-type i.ddq {
+    background-position-x: -246px
+}
+
+.goods-type i.video {
+    background-position-x: -272px
+}
+
+.video-goods .video-icon {
+    width: 27px;
+    height: 16px;
+    margin-right: 5px;
+    float: left;
+    background: url(../web/images/cms_pc_img.png?v=202001232029) -194px -349px no-repeat
+}
+
+a.img .video_icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -27px;
+    background: rgba(0, 0, 0, .5)
+}
+
+.dt_618, .src-close-btn, .srcBtn {
+    background-repeat: no-repeat
+}
+
+a.img .video_icon:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 16px solid #fff
+}
+
+#header .header_logo {
+    color: #f00582
+}
+
+.void_border {
+    border: 1px solid #f00582 !important;
+    border-radius: 2px;
+    padding: 5px
+}
+
+::-ms-clear {
+    display: none
+}
+
+#navTop {
+    width: 100%;
+    background-color: #FFF
+}
+
+.floatNav, .toTop {
+    background-color: #fff
+}
+
+.toTop {
+    font-family: iconfont;
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 50px;
+    color: #858585;
+    width: 50px;
+    font-size: 36px;
+    cursor: pointer
+}
+
+.toTop:focus, .toTop:hover {
+    color: #ea2a60
+}
+
+body #headNav #header #showList #search {
+    position: relative
+}
+
+body #headNav #header #showList dl {
+    margin: 5px 16px
+}
+
+body #headNav #header #showList #search button {
+    height: 37px;
+    overflow: hidden;
+    padding: 7px 23px
+}
+
+.floatNav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: none;
+    min-width: 1200px;
+    box-shadow: 0 2px 4px 0 rgba(170, 170, 170, .2)
+}
+
+.floatNav .w_1200 {
+    max-width: 1200px;
+    position: relative;
+    z-index: 0;
+    margin: auto
+}
+
+.floatNav .w_1200 .fn-src {
+    border-radius: 20px
+}
+
+.floatNav .w_1200 .srcBtn {
+    border-radius: 0 20px 20px 0
+}
+
+.floatNav .w_1200 .search-land {
+    width: 342px
+}
+
+.floatNav .w_1200 .fn-left, .floatNav .w_1200 .fn-left li {
+    float: left
+}
+
+.dt_618 span:last-child, .fn-block {
+    float: right
+}
+
+.floatNav .w_1200 .fn-left li a {
+    display: block;
+    height: 48px;
+    line-height: 50px;
+    border-bottom: solid 2px #fff;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 5px;
+    margin-right: 5px
+}
+
+.floatNav .w_1200 .fn-left li.active a {
+    border-color: #FF435E;
+    color: #FF435E
+}
+
+.floatNav .w_1200 .fn-left li a:hover {
+    color: #FF435E
+}
+
+.fn-block {
+    width: 340px;
+    height: 30px;
+    border: 1px solid #E8314B;
+    top: 9px;
+    position: relative;
+    border-radius: 20px
+}
+
+.search-land, .src-close-btn, .srcBtn {
+    position: absolute
+}
+
+.fn-src {
+    width: 325px;
+    height: 30px;
+    border: none;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
+    color: #aaa;
+    padding-left: 15px
+}
+
+.srcBtn {
+    width: 50px;
+    height: 32px;
+    background-color: #E8314B;
+    border: none;
+    right: -1px;
+    top: -1px;
+    color: #fff;
+    background-image: url(../images/srcicos.png?v=202001232029);
+    background-size: auto 60%;
+    background-position: center
+}
+
+.search-land {
+    display: none;
+    top: 37px;
+    width: 466px;
+    background-color: #fff;
+    z-index: 9999;
+    overflow: hidden;
+    border: 1px solid #ccc
+}
+
+.search-land li {
+    width: 90%;
+    font-size: 13px;
+    padding: 5px 5%;
+    margin: 0 auto;
+    color: #666
+}
+
+.search-land li.active, .search-land li:hover {
+    background-color: #F1F1F1;
+    cursor: pointer
+}
+
+.search-land li a {
+    color: #232326;
+    width: 100%;
+    display: inline-block
+}
+
+.search-land p {
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+    border-top: 1px solid #eee;
+    text-align: right;
+    padding-right: 20px
+}
+
+.src-close-btn {
+    display: none;
+    right: 90px;
+    top: 5px;
+    background-image: url(../web/images/cms-img.png?v=202001232029);
+    background-position: -107px 7px;
+    background-size: 287px 800px;
+    width: 28px;
+    height: 28px;
+    z-index: 9999;
+    cursor: pointer
+}
+
+.footer-wrapper div.bt {
+    font-size: 36px;
+    font-weight: 200;
+    color: #a9a9a9;
+    text-align: center;
+    padding-top: 30px
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .qr_block {
+    margin-top: 16px;
+    width: 94%;
+    margin-left: 3%
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .qr_block:first-child {
+    margin-top: -6px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_img img {
+    border-radius: 6px
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .qr_block .qr_img .qr_def {
+    margin: 20px 0 0
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_img .img_bd {
+    width: 80px;
+    height: 80px;
+    margin: 0 2px 0 5px
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_img p {
+    margin: 5px 0 0 -2px;
+    font-size: 12px;
+    color: #666
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_des {
+    width: 50px;
+    font-size: 12px;
+    text-align: left;
+    margin: 12px 0 0 5px
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_des .tit {
+    font-size: 12px;
+    color: #555;
+    font-weight: 700
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .qr_block .qr_des .tit span {
+    font-size: 12px;
+    text-align: left
+}
+
+body #baner #nav a.app_download .app_wechat .qr-img .qr_block .jhm {
+    color: #1C79F5;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 4px
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_des .dec {
+    color: #999;
+    margin-top: 2px
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block.adr .qr_des .dec {
+    margin-top: 10px
+}
+
+body #baner #nav a.app_download .app_wechat .qr_block .qr_des dd {
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px
+}
+
+.dt_618 {
+    margin: 20px 0 0;
+    background-image: url(../images/pcdt_618.jpg?v=202001232029);
+    background-size: cover;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #fff
+}
+
+.coll_def {
+    text-align: center;
+    height: 100vh;
+    background-color: #fff
+}
+
+.coll_def p.img {
+    background: center bottom no-repeat;
+    width: 100%;
+    height: 20vh;
+    padding-top: 15vh
+}
+
+.coll_def .text {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    padding-bottom: 1rem
+}
+
+.coll_def .msg {
+    color: #999
+}
+
+.coll_def a.btn {
+    padding: .6rem 4rem;
+    box-shadow: 0 2px 6px 0 rgba(255, 135, 135, .5);
+    color: #fff;
+    background: rgba(252, 77, 82, 1);
+    border-radius: 20px
+}

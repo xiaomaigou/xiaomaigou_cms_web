@@ -1,0 +1,889 @@
+/**
+ * static.cms - v1.0.0  License By 
+ * WEB小组  
+ */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto 50px
+}
+
+.search-wrap {
+    background: url(../images/rqb.jpg?v=202001232029);
+    position: relative;
+    height: 150px;
+    margin: 15px auto
+}
+
+.cat-wrap {
+    position: relative;
+    width: 1198px;
+    border: 1px solid #eee;
+    border-bottom: none;
+    margin-bottom: 15px
+}
+
+.cat-wrap .cat-list {
+    background: #f9f9f9;
+    display: block;
+    border-bottom: #eee 1px solid
+}
+
+.cat-wrap .cat-list .cat-lit-title {
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    color: #aaa;
+    font-size: 12px;
+    text-align: center
+}
+
+.cat-wrap .cat-list ul {
+    background: #fff;
+    list-style: none;
+    float: left;
+    padding: 10px 0 10px 30px;
+    line-height: 30px;
+    width: 1068px
+}
+
+.cat-wrap .cat-list ul li {
+    list-style: none;
+    float: left;
+    margin-right: 22px
+}
+
+.cat-wrap .cat-list ul li a {
+    position: relative;
+    font: 12px "Microsoft Yahei";
+    color: #666
+}
+
+.cat-wrap .cat-list ul .active a, .cat-wrap .cat-list ul .active a b, .cat-wrap .cat-list ul li a:focus, .cat-wrap .cat-list ul li a:focus b, .cat-wrap .cat-list ul li a:hover, .cat-wrap .cat-list ul li a:hover b {
+    color: #ff6255
+}
+
+.cat-wrap .cat-list ul li a b {
+    font-family: Arial;
+    font-weight: 400;
+    color: #999
+}
+
+.cat-wrap .sort-wrap {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.cat-wrap .sort-wrap .sort-text {
+    font-size: 12px;
+    color: #666
+}
+
+.cat-wrap .sort-wrap a {
+    font-size: 12px;
+    color: #5fa1ca
+}
+
+.cat-wrap .sort-wrap a.active, .cat-wrap .sort-wrap a:focus, .cat-wrap .sort-wrap a:hover {
+    color: red
+}
+
+.cat-wrap .sort-wrap a.margin {
+    margin-left: 10px
+}
+
+.tag-wrap {
+    background-color: #dbf0fd;
+    border: 1px dashed #c7d1d4;
+    height: 35px;
+    margin: 18px auto;
+    width: 1198px
+}
+
+.tag-wrap .fixed-wrap {
+    float: left
+}
+
+.tag-wrap .fixed-wrap .tag-fixed {
+    float: left;
+    line-height: 35px;
+    margin-left: 10px;
+    margin-right: 15px
+}
+
+.tag-wrap .fixed-wrap .tag-fixed .icon {
+    background: url(../images/select_icon.png?v=202001232029) no-repeat;
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-top: 10px
+}
+
+.tag-wrap .fixed-wrap .active .icon, .tag-wrap .fixed-wrap .tag-fixed:focus .icon, .tag-wrap .fixed-wrap .tag-fixed:hover .icon {
+    background: url(../images/select_icon.png?v=202001232029) 0 -13px no-repeat
+}
+
+.tag-wrap .fixed-wrap .tag-fixed .text {
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-left: 5px
+}
+
+.tag-wrap .fixed-wrap .active .text, .tag-wrap .fixed-wrap .tag-fixed:focus .text, .tag-wrap .fixed-wrap .tag-fixed:hover .text {
+    color: red
+}
+
+.tag-wrap .split {
+    height: 25px;
+    background-color: #CCC;
+    width: 1px;
+    float: left;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-top: 5px
+}
+
+.tag-wrap .tags {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 37px
+}
+
+.tag-wrap .tags span {
+    float: left;
+    margin-left: 20px
+}
+
+.tag-wrap .tags a {
+    float: left;
+    color: #5fa1ca;
+    margin: auto 8px
+}
+
+.tag-wrap .tags .active, .tag-wrap .tags a:focus, .tag-wrap .tags a:hover {
+    color: red
+}
+
+.goods-list ul {
+    list-style: none
+}
+
+.goods-list ul li {
+    float: left;
+    list-style: none;
+    margin-right: 17px;
+    border: 1px solid transparent;
+    width: 285px;
+    margin-bottom: 20px
+}
+
+.goods-list ul li a.img {
+    position: relative;
+    width: 285px;
+    height: 285px;
+    display: block;
+    margin-bottom: 5px
+}
+
+.goods-list ul li a.img .label {
+    position: absolute;
+    background: url(../images/today_goods.png?v=202001232029) no-repeat;
+    width: 43px;
+    height: 43px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px
+}
+
+.goods-list ul li a.img img {
+    border: none;
+    max-width: 285px;
+    max-height: 285px
+}
+
+.goods-list ul li .padding {
+    padding: 0 5px 5px
+}
+
+.goods-list ul li .padding .padding-tit {
+    display: block;
+    height: 20px;
+    overflow: hidden
+}
+
+.goods-list ul li .padding .title i {
+    margin-top: 2px
+}
+
+.goods-list ul li .padding .video-goods i.video-icon {
+    margin-top: 3px
+}
+
+.goods-list ul li .padding .title .tmall {
+    background: url(../images/tmall.png?v=202001232029) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin-right: 3px
+}
+
+.goods-list ul li .padding .title .taobao {
+    background: url(../images/taobao.png?v=202001232029) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin-right: 3px
+}
+
+.goods-list ul li .padding .title span {
+    height: 20px;
+    overflow: hidden;
+    color: #666
+}
+
+.goods-list ul li .padding .coupon-wrap {
+    margin: 7px 0
+}
+
+.goods-list ul li .padding .coupon-wrap .price {
+    color: #f15482;
+    padding: 0 3px;
+    font-weight: 700
+}
+
+.goods-list ul li .padding .coupon-wrap .num {
+    color: #8cbfca;
+    padding: 0 3px
+}
+
+.goods-list ul li .padding .recent-sold-num {
+    font-size: 12px;
+    color: #de366e;
+    margin-top: 5px
+}
+
+.goods-list ul li .padding .recent-sold-num .sold-count {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 3px
+}
+
+.goods-list ul li .price-wrap {
+    background-color: #f15d35;
+    position: relative;
+    padding: 5px
+}
+
+.goods-list ul li .price-wrap .price .text {
+    color: #FFF;
+    font-size: 14px
+}
+
+.goods-list ul li .price-wrap .price .text .price {
+    font-size: 28px
+}
+
+.goods-list ul li .price-wrap .org-price {
+    position: absolute;
+    top: 21px;
+    right: 29px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.goods-list ul .no-right {
+    margin-right: 0
+}
+
+.today-tmall-jingxuan-tab, .today-tmall-yushou-tab {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    z-index: 50
+}
+
+.today-tmall-jingxuan-tab {
+    width: 90px;
+    height: 26px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, "Microsoft Yahei";
+    background: #ff3349;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    line-height: 26px
+}
+
+.today-tmall-yushou-tab, .today-tmall-yushou-tab b {
+    font-size: 12px;
+    font-family: Arial, "Microsoft Yahei"
+}
+
+.today-tmall-yushou-tab {
+    background: url(../wap_new/activity/tmall_11_11/tmall_search_yushou_tab.png?v=202001232029);
+    width: 80px;
+    height: 53px;
+    text-align: center;
+    color: #433134
+}
+
+.today-tmall-yushou-tab b {
+    display: block;
+    line-height: 34px;
+    font-weight: 400;
+    color: #fff
+}
+
+.today-tmall-yushou-tab i {
+    font-style: normal;
+    color: #FF0036
+}
+
+.today-tmall-list li .coupon-wrap span {
+    padding: 2px 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    background: #FFF1F3;
+    color: #FF3349
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.list-content {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 500px;
+    overflow: hidden;
+    padding-left: 8px;
+    position: relative;
+    left: -8px
+}
+
+.list-content .head-tit {
+    padding: 33px 0 0 78px;
+    position: relative
+}
+
+.list-content .head-tit .end-time {
+    position: absolute;
+    right: 0;
+    top: 76px;
+    font-size: 13px
+}
+
+.list-content .head-tit .end-time span {
+    font-size: 17px;
+    font-family: Arial;
+    color: rgba(254, 46, 84, 1);
+    display: inline-block;
+    width: 20px;
+    margin: 0 2px
+}
+
+.list-content .head-tit .ht-bg {
+    width: 970px;
+    height: 86px;
+    background: url(../images/list/listtopbg.png?v=202001232029) center no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 0 0 370px;
+    box-sizing: border-box
+}
+
+.list-content .head-tit .ht-bg img {
+    position: relative;
+    top: 7px;
+    margin-right: 12px
+}
+
+.list-content .head-tit .ht-bg .tit {
+    font-size: 29px;
+    font-weight: 700;
+    color: rgba(254, 46, 84, 1);
+    line-height: 36px
+}
+
+.list-content .head-tit .ht-bg .tit span {
+    font-size: 32px;
+    line-height: 45px;
+    font-family: Arial
+}
+
+.list-content .head-tit .ht-bg .des {
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    line-height: 24px
+}
+
+.list-content .list-tab {
+    width: 660px;
+    height: 40px;
+    border-radius: 24px;
+    border: 1px solid #FE2E54;
+    margin: 30px auto 27px;
+    line-height: 42px;
+    display: flex;
+    overflow: hidden
+}
+
+.list-content .list-tab a i.img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/list/listhour.png?v=202001232029);
+    background-size: contain;
+    position: relative;
+    top: 4px;
+    margin-right: 5px
+}
+
+.list-content .list-tab a.act i.img {
+    background: url(../images/list/listhouract.png?v=202001232029);
+    background-size: contain
+}
+
+.list-content .list-tab a i.img.day {
+    background: url(../images/list/listday.png?v=202001232029);
+    background-size: contain
+}
+
+.list-content .list-tab a.act i.img.day {
+    background: url(../images/list/listdayact.png?v=202001232029);
+    background-size: contain
+}
+
+.list-content .list-tab a {
+    width: 335px;
+    text-align: center;
+    background: #fff
+}
+
+.list-content .list-tab a img {
+    position: relative;
+    top: 3px;
+    margin-right: 5px
+}
+
+.list-content .list-tab a .tit {
+    font-size: 18px;
+    color: #FE2E54
+}
+
+.list-content .list-tab a .des {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #777
+}
+
+.list-content .list-tab a.act {
+    background: #FE2E54
+}
+
+.list-content .list-tab a.act .des, .list-content .list-tab a.act .tit {
+    color: #fff
+}
+
+.list-content .cat-wrap {
+    border: none
+}
+
+.list-content .cat-wrap .cat-list ul {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    line-height: 50px;
+    border-radius: 6px
+}
+
+.list-content .cat-wrap .cat-list ul li a {
+    color: rgba(51, 51, 51, 1);
+    font-size: 14px;
+    padding: 1px 8px
+}
+
+.list-content .cat-wrap .cat-list ul li a:hover {
+    color: #FC4D52
+}
+
+.list-content .cat-wrap .cat-list {
+    border: none
+}
+
+.list-content .cat-wrap .cat-list ul li {
+    margin-right: 15px
+}
+
+.list-content .cat-wrap .cat-list ul li.active a {
+    background: rgba(254, 46, 84, 1);
+    border-radius: 11px;
+    color: #fff
+}
+
+.list-content .goods-list {
+    width: 1217px;
+    margin-top: 36px;
+    margin-bottom: 50px
+}
+
+.list-content .goods-list ul li {
+    width: 224px;
+    height: 375px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 17px;
+    position: relative
+}
+
+.list-content .goods-list ul li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: -1px;
+    border: 1px solid transparent;
+    border-radius: 6px
+}
+
+.list-content .goods-list ul li:hover a {
+    border: 1px solid rgba(254, 46, 84, 1);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12)
+}
+
+.list-content .goods-list ul li .img-block {
+    width: 224px;
+    height: 224px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden
+}
+
+.list-content .goods-list ul li:hover .img-block {
+    width: 100%;
+    height: 224px;
+    margin: 0
+}
+
+.list-content .goods-list .cont {
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.list-content .goods-list .cont .tit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 13px;
+    color: #494949;
+    margin-top: 15px
+}
+
+.list-content .goods-list li:hover .cont .tit {
+    color: #FC4D52
+}
+
+.list-content .goods-list .cont .num {
+    display: inline-block;
+    background: rgba(255, 237, 237, 1);
+    border-radius: 2px;
+    color: #FE2E54;
+    text-align: center;
+    line-height: 20px;
+    margin: 15px auto 10px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 20px
+}
+
+.list-content .goods-list .cont .num span {
+    color: #FE2E54;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: 700
+}
+
+.list-content .goods-list .cont .line-block {
+    width: 180px;
+    margin: 0 auto 5px;
+    height: 20px;
+    position: relative;
+    padding: 9px 0;
+    box-sizing: border-box
+}
+
+.list-content .goods-list .cont .line-block .line {
+    width: 180px;
+    border-top: 2px solid #EBEBEB
+}
+
+.list-content .goods-list .cont .line-block .line em {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    border-top: 2px solid #FC4D52
+}
+
+.list-content .goods-list .cont .wrap .price {
+    color: #FC4D52;
+    font-size: 12px;
+    margin-left: 1px
+}
+
+.list-content .goods-list .cont .wrap .price b {
+    font-weight: 400
+}
+
+.list-content .goods-list .cont .wrap .price span {
+    font-size: 21px;
+    font-family: Arial;
+    font-weight: 700;
+    line-height: 28px
+}
+
+.list-content .goods-list .cont .wrap .price i {
+    color: #929292;
+    border-top: 1px solid #929292;
+    line-height: 0;
+    display: inline-block
+}
+
+.list-content .goods-list ul li.top .cont .ico, .list-content .goods-list ul li.top .cont .line-block, .list-content .goods-list ul li.top .cont .wrap .price b {
+    display: none
+}
+
+.list-content .goods-list .cont .ico {
+    width: 65px;
+    height: 16px;
+    margin: 8px -5px 0 0;
+    overflow: hidden
+}
+
+.list-content .goods-list .cont .ico i {
+    float: right;
+    width: 16px;
+    height: 16px;
+    background-size: 100% 100%;
+    margin-right: 3px;
+    position: relative
+}
+
+.list-content .goods-list .cont .ico i.qiang {
+    background: url(../images/list/qiang.png?v=202001232029) center no-repeat;
+    background-size: contain
+}
+
+.list-content .goods-list .cont .ico i.tmall {
+    background: url(../images/list/tmall.png?v=202001232029) center no-repeat;
+    background-size: contain
+}
+
+.list-content .goods-list .cont .ico i.ju {
+    background: url(../images/list/ju.png?v=202001232029) center no-repeat;
+    background-size: contain
+}
+
+.list-content .goods-list ul li.top {
+    width: 390px;
+    height: 224px;
+    margin-bottom: 36px;
+    margin-right: 11px;
+    overflow: visible
+}
+
+.list-content .goods-list ul li.top .img-block {
+    position: absolute;
+    height: 100%;
+    width: 225px;
+    border-radius: 6px 0 0 6px
+}
+
+.list-content .goods-list ul li.top .img {
+    border-radius: 6px 0 0 6px;
+    height: 100%;
+    width: auto;
+    overflow: hidden
+}
+
+.list-content .goods-list ul li.top .cont {
+    float: right;
+    width: 165px;
+    overflow: hidden;
+    margin-top: 60px
+}
+
+.list-content .goods-list ul li.top .cont .tit {
+    white-space: normal;
+    text-align: left
+}
+
+.list-content .goods-list ul li.top .cont .num {
+    padding: 0 3px;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.list-content .goods-list ul li.top:nth-child(2) .cont .num, .list-content .goods-list ul li.top:nth-child(2) .cont .num span {
+    background: rgba(237, 241, 255, 1);
+    color: #992EFE
+}
+
+.list-content .goods-list ul li.top:nth-child(3) .cont .num, .list-content .goods-list ul li.top:nth-child(3) .cont .num span {
+    background: #FFF5ED;
+    color: #FF7C1A
+}
+
+.list-content .goods-list ul li.top .cont .wrap .price i {
+    border: none;
+    color: #929292;
+    margin-left: 5px
+}
+
+.list-content .goods-list ul li.top .cont .wrap .price i:before {
+    content: '天猫价'
+}
+
+.list-content .goods-list ul li .rank {
+    position: absolute;
+    width: 33px;
+    height: 24px;
+    background: url(../images/list/listrank.png?v=202001232029) center no-repeat;
+    top: 10px;
+    left: -8px;
+    text-align: center;
+    color: #fff;
+    z-index: 99
+}
+
+.list-content .goods-list ul li.top .rank {
+    position: absolute;
+    right: 60px;
+    left: auto;
+    top: -22px;
+    width: 40px;
+    height: 76px;
+    background: url(../images/list/listrank1.png?v=202001232029) center no-repeat;
+    background-size: contain
+}
+
+.list-content .goods-list ul li.top:nth-child(2) .rank {
+    background: url(../images/list/listrank2.png?v=202001232029) center no-repeat;
+    background-size: contain
+}
+
+.list-content .goods-list ul li.top:nth-child(3) .rank {
+    background: url(../images/list/listrank3.png?v=202001232029) center no-repeat;
+    background-size: contain
+}
+
+.no-goods {
+    width: 700px;
+    text-align: center;
+    margin: 100px auto
+}
+
+.no-goods img {
+    margin-bottom: 20px
+}
+
+.no-goods p {
+    color: #888;
+    margin: 15px 0
+}
+
+.list-content .goods-list ul li .img {
+    border-radius: 6px 6px 0 0;
+    width: 227px;
+    height: 227px;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s
+}
+
+.list-content .goods-list ul li:hover .img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04)
+}
+
+.layui-layer-tips .layui-layer-content {
+    margin-left: -10px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    line-height: 14px !important
+}
+
+.layui-layer-tips i.layui-layer-TipsG {
+    border-top: 5px solid rgba(0, 0, 0, .5) !important;
+    border-left: 5px solid transparent !important;
+    border-right: 5px solid transparent !important
+}
+
+.layui-layer-tips i.layui-layer-TipsT {
+    bottom: -13px !important;
+    left: 13px !important
+}
+
+.new_comp.goods-list ul li .rank-num {
+    width: 57px;
+    height: 54px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    background: url(../images/active_ico/activelistrank.png?v=202001232029) center no-repeat;
+    background-size: contain;
+    z-index: 9
+}
+
+.new_comp.goods-list ul li .rank-num b {
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-family: Arial;
+    font-weight: 400
+}
+
+.new_comp.goods-list ul li:nth-child(1) .rank-num {
+    background-image: url(../images/active_ico/activelistrank1.png?v=202001232029)
+}
+
+.new_comp.goods-list ul li:nth-child(2) .rank-num {
+    background-image: url(../images/active_ico/activelistrank2.png?v=202001232029)
+}
+
+.new_comp.goods-list ul li:nth-child(3) .rank-num {
+    background-image: url(../images/active_ico/activelistrank3.png?v=202001232029)
+}

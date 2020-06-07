@@ -1,0 +1,257 @@
+/**
+ * static.cms - v1.0.0  License By 
+ * WEB小组  
+ */
+.nine_banner_tab .swiper_center .center_main .pic:hover, .nine_banner_tab .swiper_center .next:hover, .nine_banner_tab .swiper_center .prev:hover {
+    opacity: .9
+}
+
+.nine_h3, .nine_nav_link {
+    border-bottom: solid 1px #f1f1f1
+}
+
+.w_1200 {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.nine_banner_tab {
+    height: 444px;
+    background: url(../images/nine_new/nine_tabbg.png?v=202001232029) top center no-repeat;
+    margin-bottom: 50px;
+    position: relative;
+    top: 30px;
+    border-radius: 12px
+}
+
+.nine_banner_tab h1 {
+    height: 58px;
+    text-align: center;
+    padding: 27px 0 23px
+}
+
+.nine_banner_tab h1 img {
+    height: 58px
+}
+
+.nine_banner_tab .center {
+    margin: 0 15px
+}
+
+.nine_banner_tab .center h3 {
+    color: #fff;
+    line-height: 26px;
+    height: 26px;
+    font-size: 18px
+}
+
+.nine_banner_tab .center h3 img {
+    float: left;
+    height: 26px;
+    margin-right: 10px
+}
+
+.nine_banner_tab .swiper_center {
+    padding: 15px 0
+}
+
+.nine_banner_tab .swiper_center .swiper-slide {
+    width: 210px;
+    height: 270px
+}
+
+.nine_banner_tab .swiper_center .center_main {
+    margin-right: 10px;
+    height: 270px;
+    background: #fff;
+    border-radius: 10px
+}
+
+.nine_banner_tab .swiper_center .center_main .pic {
+    display: block;
+    height: 180px;
+    width: 180px;
+    margin: auto auto 20px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+    z-index: 1
+}
+
+.nine_banner_tab .swiper_center .center_main .pic img {
+    width: 100%;
+    display: block
+}
+
+.nine_banner_tab .swiper_center .center_main .mouye {
+    padding: 10px 10px 5px 12px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden
+}
+
+.nine_banner_tab .swiper_center .center_main .mouye .fl {
+    color: #FC4D52
+}
+
+.nine_banner_tab .swiper_center .center_main .mouye .fl span {
+    font-size: 20px;
+    font-weight: 400
+}
+
+.nine_banner_tab .swiper_center .center_main .mouye .fr {
+    color: #888;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.nine_banner_tab .swiper_center .center_main .mouye .fr b {
+    color: #FF8433
+}
+
+.nine_banner_tab .swiper_center .center_main .text {
+    margin: 0 10px;
+    overflow: hidden;
+    height: 22px;
+    line-height: 22px;
+    color: #494949;
+    display: block
+}
+
+.nine_banner_tab .swiper_center .center_main:hover .text {
+    color: #FC4D52
+}
+
+.nine_banner_tab .swiper_center .next, .nine_banner_tab .swiper_center .prev {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: 40px;
+    z-index: 20
+}
+
+.nine_banner_tab .swiper_center .next img, .nine_banner_tab .swiper_center .prev img {
+    width: 100%;
+    display: block
+}
+
+.nine_banner_tab .swiper_center .next {
+    left: auto;
+    right: 0
+}
+
+.nine_center {
+    background: #fff;
+    padding-bottom: 1px;
+    margin-bottom: 30px
+}
+
+.nine_h3 {
+    height: 20px;
+    padding: 15px 13px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #555
+}
+
+.nine_h3 .nine_hr {
+    width: 4px;
+    height: 20px;
+    background: #FE2E54;
+    float: left;
+    margin-right: 8px;
+    overflow: hidden
+}
+
+.nine_nav_link {
+    position: relative;
+    z-index: 0;
+    padding-right: 100px;
+    padding-bottom: 10px
+}
+
+.nine_nav_link .link, .nine_nav_link .tab {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 15px;
+    position: relative;
+    top: 15px;
+    z-index: 1;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px
+}
+
+.nine_nav_link .link {
+    margin: 0 0 10px 10px;
+    z-index: 5
+}
+
+.nine_nav_link .link:hover {
+    color: #FE2E54
+}
+
+.nine_nav_link .link b.tab {
+    position: absolute;
+    left: 90%;
+    top: -7px;
+    background: url(../images/nine_new/nine_tab.svg?v=202001232029);
+    border-radius: 2px;
+    color: #fff;
+    height: 15px;
+    padding: 0;
+    width: 33px;
+    text-align: center;
+    font-weight: 300;
+    overflow: hidden;
+    line-height: 999
+}
+
+.nine_nav_link .link.active {
+    color: #fff;
+    background: #FE2E54;
+    border-radius: 15px;
+    z-index: 0
+}
+
+.nine_nav_link .link.tab_act {
+    margin-right: 20px
+}
+
+.nine_nav_link .open {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #888
+}
+
+.nine_nav_link .center {
+    overflow: hidden;
+    height: 40px
+}
+
+.nine_nav_link .open i {
+    width: 12px;
+    height: 8px;
+    overflow: hidden;
+    background: url(../images/nine_new/up.png?v=202001232029);
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    z-index: 1
+}
+
+.nine_nav_link .open.up i {
+    background: url(../images/nine_new/dom.png?v=202001232029)
+}
+
+.nine_nav_link.active .center {
+    height: auto;
+    overflow: inherit
+}
+
+.nine_nav_link.active {
+    padding-bottom: 20px
+}
